@@ -1,4 +1,4 @@
-import Mavlinlogo from "../assets/images/mavlinWhite.png";
+import Mavlinlogo from "../assets/images/MavlinWhite.png";
 import footerBackground from "../assets/images/footer/bg.png"; // Add your background image here
 import { HiOutlineArrowRight } from "react-icons/hi";
 

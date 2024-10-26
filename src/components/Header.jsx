@@ -18,7 +18,9 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">
-          <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[70px]" />
+          <NavLink to={"/"}>
+            <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[70px]" />
+          </NavLink>
         </h1>
         <nav className="flex space-x-8">
           {menuItems.map((item) => (
@@ -26,8 +28,10 @@ const Header = () => {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `hover:text-gray-400 ${
-                  isActive ? "font-bold border-b-2 border-mavlin-blue" : ""
+                `hover:font-bold ${
+                  isActive
+                    ? "font-bold border-b-2 border-mavlin-blue "
+                    : "font-medium"
                 }`
               }
             >
@@ -35,8 +39,19 @@ const Header = () => {
             </NavLink>
           ))}
         </nav>
-        <button className="bg-mavlin-blue text-white px-4 py-2">
-          Contact Us
+        <button className=" px-4 py-2">
+          <NavLink
+            to={"/contact#contact-form"}
+            className={({ isActive }) =>
+              `py-2 px-4 font-medium ${
+                isActive
+                  ? "bg-mavlin-gold text-mavlin-blue"
+                  : "bg-mavlin-blue text-white"
+              }`
+            }
+          >
+            Contact Us
+          </NavLink>
         </button>
       </div>
     </motion.nav>
