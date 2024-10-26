@@ -74,14 +74,14 @@ const Testimonials = () => {
         <div className="w-full md:w-1/2 flex flex-col text-center">
           <p className="text-mavlin-gold uppercase">TESTIMONIAL</p>
           <p className="font-arimo text-3xl text-mavlin-blue font-semibold W-full ">
-            We offer tailored solutions that drive success for our clients
+            What Our Clients Say
           </p>
         </div>
 
         {/* Center Images */}
         <div className="flex items-center justify-center gap-4 mt-4 py-2 overflow-hidden transition-transform duration-2000 ease-in-out transform-gpu">
           {" "}
-          <div className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-mavlin-gray-1">
+          <div className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-mavlin-gold/50">
             <img
               src={
                 testimonials[
@@ -93,7 +93,7 @@ const Testimonials = () => {
             />
             <div className="absolute inset-0 bg-gray-100 opacity-50"></div>
           </div>
-          <div className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-gray-200">
+          <div className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-mavlin-gold/70">
             <img
               src={
                 testimonials[
@@ -105,7 +105,8 @@ const Testimonials = () => {
             />
             <div className="absolute inset-0 bg-gray-600 opacity-40"></div>
           </div>
-          <div className="relative overflow-hidden rounded-full cursor-pointer w-[200px] h-[200px] border-[12px] border-mavlin-gold transition-transform duration-500 hover:scale-110">
+          {/* middle */}
+          <div className="relative overflow-hidden rounded-full cursor-pointer w-[200px] h-[200px] border-[12px] border-mavlin-blue transition-transform duration-500 hover:scale-110">
             <img
               src={currentTestimonial.image}
               alt="Current"
@@ -113,7 +114,7 @@ const Testimonials = () => {
             />
           </div>
           <div
-            className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-gray-200"
+            className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-mavlin-gold/70"
             onClick={prevTestimonial}
           >
             <img
@@ -123,7 +124,7 @@ const Testimonials = () => {
             />
             <div className="absolute inset-0 bg-gray-600 opacity-40"></div>
           </div>
-          <div className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-gray-200">
+          <div className="relative overflow-hidden rounded-full cursor-pointer w-[130px] h-[130px] border-[10px] border-mavlin-gold/50">
             <img
               src={testimonials[(currentIndex + 2) % totalTestimonials].image}
               alt="Next"

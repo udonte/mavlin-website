@@ -1,17 +1,31 @@
 import { motion } from "framer-motion";
+import Testimonials from "../components/Home/Testimonial";
+import AboutHero from "../components/About/AboutHero";
+import CompanyDescription from "../components/About/CompanyDescription";
+import StatsSection from "../components/Home/Stats";
+import MissionAndVision from "../components/About/MissionAndVision";
+import CoreValues from "../components/About/CoreValues";
+import OurTeam from "../components/About/OurTeam";
+import StaffVideo from "../components/About/StaffVideo";
 
 const About = () => (
   <motion.div
-    className="container mx-auto p-8"
-    initial={{ opacity: 0, x: -100 }}
-    animate={{ opacity: 1, x: 0 }}
+    className=""
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
     exit={{ opacity: 0 }}
   >
-    <h2 className="text-4xl font-bold mb-4">About Us</h2>
-    <p className="text-lg text-gray-600">
-      CompanyName is a leader in providing top-notch services...
-    </p>
+    <div className="mt-16">
+      <AboutHero />
+      <StatsSection />
+      <CompanyDescription />
+      <MissionAndVision />
+      <OurTeam />
+      <CoreValues />
+      <StaffVideo />
+      <Testimonials />
+    </div>
   </motion.div>
 );
 

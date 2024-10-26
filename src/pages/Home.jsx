@@ -19,7 +19,15 @@ const Home = () => (
     <div className="mt-16">
       <Hero />
       <StatsSection />
-      <AboutUs />
+      <motion.div
+        className=""
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 5 }}
+        exit={{ opacity: 0 }}
+      >
+        <AboutUs />
+      </motion.div>
       <Overview />
       <Services />
       <WhyChoose />
