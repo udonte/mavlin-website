@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Mavlinlogo from "../assets/images/mavlinBlue.png";
+import { NavLink } from "react-router-dom";
+import Mavlinlogo from "../assets/images/MavlinBlue.png";
 import { motion } from "framer-motion";
 
 const menuItems = [
@@ -23,7 +22,7 @@ const Header = () => {
         </h1>
         <nav className="flex space-x-8">
           {menuItems.map((item) => (
-            <Link
+            <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
@@ -33,7 +32,7 @@ const Header = () => {
               }
             >
               {item.title}
-            </Link>
+            </NavLink>
           ))}
         </nav>
         <button className="bg-mavlin-blue text-white px-4 py-2">

@@ -84,7 +84,7 @@ const CoreValues = () => {
                 index % 2 === 0 ? "text-right" : "text-left"
               }`}
             >
-              <p className="text-mavlin-blue font-semibold text-lg mb-1">
+              <p className="text-mavlin-blue font-semibold text-lg md:text-2xl mb-1">
                 {value.title}
               </p>
               <p className="text-gray-600 text-xs font-semibold">

@@ -34,7 +34,7 @@ const StaffVideo = () => {
         </div>
         <a
           href="/contact"
-          className="inline-block hover:bg-mavlin-gold hover:text-white text-mavlin-gold font-semibold py-3 border border-mavlin-gold px-8 shadow-lg transition-transform transform hover:scale-105"
+          className="inline-block hover:bg-mavlin-gold hover:text-white text-mavlin-gold font-semibold py-3 border border-white px-8 shadow-lg transition-transform transform hover:scale-105"
         >
           Contact Us
         </a>
