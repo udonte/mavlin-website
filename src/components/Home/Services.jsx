@@ -3,34 +3,41 @@ import Service2 from "../../assets/images/Home/Services2.png";
 import Service3 from "../../assets/images/Home/Services3.png";
 import Service4 from "../../assets/images/Home/Services4.png";
 import Service5 from "../../assets/images/Home/Services5.png";
+import agriculture from "../../assets/images/Home/agriculture.png";
+import construction from "../../assets/images/Home/construction.png";
+import telecoms from "../../assets/images/Home/telecoms2.png";
+import oilGas from "../../assets/images/Home/oilGas2.png";
+import procurement from "../../assets/images/Home/procurement.png";
 
 // Mock data for services
 const serviceData = [
   {
-    image: Service5,
+    image: construction,
+    title: "Construction",
+    description: "Sustainable and efficient power solutions for modern needs.",
+  },
+  {
+    image: telecoms,
     title: "Telecommunications",
     description:
       "Reliable solutions in communications infrastructure to keep you connected.",
   },
+
   {
-    image: Service3,
-    title: "Energy Solutions",
-    description: "Sustainable and efficient power solutions for modern needs.",
+    image: oilGas,
+    title: "Oil and Gas",
+    description:
+      "Oil and Gas supply to all sectors and industries in the world",
   },
   {
-    image: Service4,
-    title: "Project Management",
-    description: "End-to-end project solutions across various industries.",
-  },
-  {
-    image: Service1,
+    image: agriculture,
     title: "Agriculture",
     description:
       "Modern farming techniques for high-quality exports to North America",
   },
   {
-    image: Service2,
-    title: "Automobile Distro",
+    image: procurement,
+    title: "Procurement & Logistics",
     description:
       "Efficient supply chain and logistics for vehicles and heavy machinery.",
   },

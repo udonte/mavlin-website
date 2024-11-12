@@ -17,21 +17,19 @@ const OurMission = () => {
           <div className="w-full border-x border-mavlin-gold px-24 mx-auto">
             <p className="text-white mb-4">OUR MISSION</p>
             <p className="text-WHITE mb-4 text-mavlin-gold uppercase text-2xl">
-              Sustainable Development Across Sections{" "}
+              Client Satisfaction{" "}
             </p>
             <div className=" text-lg text-white font-arimo">
               We are passionate about driving sustainable development across
               sectors by delivering high-quality solutions and unparalleled
-              service. We want to deliver high-quality, integrated services
-              across key industries by
+              service. We want to provide innovative{" "}
               <span className="text-mavlin-gold">
-                {" "}
-                bridging African markets{" "}
+                quality services to our clients{" "}
               </span>{" "}
-              with{" "}
+              on a timely schedule using the{" "}
               <span className="text-mavlin-gold">
-                international innovation and standards.
-              </span>
+                best available resources.
+              </span>{" "}
             </div>
             <button className="mt-8 border px-4 py-2 border-white bg-transparent w-fit text-white hover:bg-black/10">
               <p>Contact Us</p>

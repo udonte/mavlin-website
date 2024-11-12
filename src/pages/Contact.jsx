@@ -4,6 +4,7 @@ import Testimonials from "../components/Home/Testimonial";
 import ContactForm from "../components/Contact/ContactForm";
 import ContactHero from "../components/Contact/ContactHero";
 import AddressDetails from "../components/Contact/AddressDetails";
+import Clients from "../components/Home/Clients";
 
 const Contact = () => (
   <motion.div
@@ -18,7 +19,7 @@ const Contact = () => (
       <StatsSection />
       <ContactForm />
       <AddressDetails />
-      <Testimonials />
+      <Clients />
     </div>
   </motion.div>
 );

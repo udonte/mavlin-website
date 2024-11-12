@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
-import Mavlinlogo from "../assets/images/MavlinBlue.png";
+import Mavlinlogo from "../assets/images/MavlinBlue.jpeg";
 import { motion } from "framer-motion";
 
 const menuItems = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
+  { title: "Services", path: "/services" },
   { title: "Projects", path: "/projects" },
 ];
 
@@ -30,7 +31,7 @@ const Header = () => {
               className={({ isActive }) =>
                 `hover:font-bold ${
                   isActive
-                    ? "font-bold border-b-2 border-mavlin-blue "
+                    ? "font-bold border-b-2 border-mavlin-gold "
                     : "font-medium"
                 }`
               }
@@ -38,6 +39,7 @@ const Header = () => {
               {item.title}
             </NavLink>
           ))}
+          <button className={`font-medium`}>Subsidiaries</button>
         </nav>
         <button className=" px-4 py-2">
           <NavLink

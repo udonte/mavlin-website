@@ -7,6 +7,7 @@ import Services from "../components/Home/Services";
 import WhyChoose from "../components/Home/WhyChoose";
 import StatsSection from "../components/Home/Stats";
 import OurMission from "../components/Home/OurMission";
+import Clients from "../components/Home/Clients";
 
 const Home = () => (
   <motion.div
@@ -32,7 +33,7 @@ const Home = () => (
       <Services />
       <WhyChoose />
       <OurMission />
-      <Testimonials />
+      <Clients />
     </div>
   </motion.div>
 );

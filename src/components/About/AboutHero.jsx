@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import HeroImage1 from "../../assets/images/About/AboutHero1.jpg";
-import HeroImage2 from "../../assets/images/About/AboutHero2.jpg";
-import HeroImage3 from "../../assets/images/About/AboutHero3.jpg";
+import HeroImage1 from "../../assets/images/Home/HeroImage1.png";
+import HeroImage2 from "../../assets/images/Home/HeroImage2.jpg";
+import HeroImage3 from "../../assets/images/Home/HeroImage3.jpg";
 // import HeroImage4 from "../../assets/images/Home/HeroImage1.png";
 // import HeroImage5 from "../../assets/images/Home/HeroImage2.jpg";
 

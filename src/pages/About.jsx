@@ -7,6 +7,7 @@ import MissionAndVision from "../components/About/MissionAndVision";
 import CoreValues from "../components/About/CoreValues";
 import OurTeam from "../components/About/OurTeam";
 import StaffVideo from "../components/About/StaffVideo";
+import Clients from "../components/Home/Clients";
 
 const About = () => (
   <motion.div
@@ -21,10 +22,8 @@ const About = () => (
       <StatsSection />
       <CompanyDescription />
       <MissionAndVision />
-      <OurTeam />
       <CoreValues />
-      <StaffVideo />
-      <Testimonials />
+      <Clients />
     </div>
   </motion.div>
 );

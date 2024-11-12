@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Contact from "../../assets/images/Contact/Contact1.jpg"; // Add your background image here
+import Contact from "../../assets/images/Contact/Form2.png"; // Add your background image here
 import FormImage from "../../assets/images/Contact/Form2.png"; // Add your background image here
 
 const ContactForm = () => {

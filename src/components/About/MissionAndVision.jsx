@@ -1,4 +1,4 @@
-import Mission from "../../assets/images/About/Mission.png";
+import Mission from "../../assets/images/About/Mission.jpg";
 import Vision from "../../assets/images/About/Vision.jpg";
 
 const MissionAndVision = () => {
@@ -21,9 +21,8 @@ const MissionAndVision = () => {
             </p>
             <div className="bg-gray-100 px-4 py-4 rounded-md  mt-8 flex items-center shadow">
               <p className="font-karla text-sm w-full md:w-[90%] leading-5 text-black">
-                We want to deliver high-quality, integrated services across key
-                industries by bridging African markets with international
-                innovation and standards.
+                Our want to provide innovative quality services to our clients
+                on a timely schedule using the best available resources.
               </p>
             </div>
             <button className="bg-mavlin-blue py-2 px-6 text-lg font-semibold border border-black transition-transform transform hover:scale-105 text-white w-fit mt-8">
@@ -41,10 +40,10 @@ const MissionAndVision = () => {
               Be the global leader in cross-continental services
             </p>
             <div className="bg-gray-100 px-4 py-4 rounded-md  mt-8 flex items-center justify-end shadow ">
-              <p className="font-karla text-sm w-full md:w-[90%] leading-5 text-black text-right">
-                We aim to empower industries and communities through innovation
-                and dedication.We belive in transformation through custom
-                solutions and operational excellence.
+              <p className="font-karla text-sm w-full leading-5 text-black text-right">
+                We aim to be a top-class oil service company that competes
+                favorably with the best, providing top notch services in our
+                segment of the oil service and supply industry wherever we work.
               </p>
             </div>
             <button className="bg-mavlin-blue py-2 px-6 text-lg font-semibold border border-black transition-transform transform hover:scale-105 text-white w-fit mt-8">
@@ -52,7 +51,13 @@ const MissionAndVision = () => {
             </button>
           </div>
           <div className="flex w-full md:w-1/2 shadow-xl rounded-xl overflow-hidden bg-gray-200">
-            <img src={Vision} alt="mission" className="h-full object-contain" />
+            <div className="flex w-full shadow-xl rounded-xl overflow-hidden">
+              <img
+                src={Vision}
+                alt="vision"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

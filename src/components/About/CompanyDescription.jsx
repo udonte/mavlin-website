@@ -4,8 +4,8 @@ const CompanyDescription = () => {
       <div className="w-full border-x border-mavlin-gold px-24 mx-auto">
         <p className="text-mavlin-gold mb-8">OVERVIEW</p>
         <div className=" text-2xl text-mavlin-blue font-arimo">
-          Mavlin is a company of African origin with operations across Nigeria
-          and Canada. As an EPC{" "}
+          Mavlin is a global brand with operations across Nigeria and Canada. As
+          an EPC{" "}
           <span className="text-mavlin-gold">
             {" "}
             (Engineering, Procurement, and Construction){" "}

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "mavlin-blue": "#172039",
+        "mavlin-blue": "#052c9d",
         "mavlin-gold": "#B29063",
         "layover-gray-500": "#37454D",
         "layover-black": "#040707",

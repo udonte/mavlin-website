@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 const StatsSection = () => {
   const stats = [
-    { id: 1, target: 150, label: "Projects Completed" },
-    { id: 2, target: 20, label: "Years of Experience" },
+    { id: 1, target: 50, label: "Projects Completed" },
+    { id: 2, target: 18, label: "Years of Experience" },
   ];
 
   const [counts, setCounts] = useState(
