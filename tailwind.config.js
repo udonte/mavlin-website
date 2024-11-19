@@ -6,8 +6,9 @@ export default {
       colors: {
         "mavlin-blue": "#052c9d",
         "mavlin-gold": "#B29063",
-        "layover-gray-500": "#37454D",
-        "layover-black": "#040707",
+        "mavlin-farms-green": "#22552A",
+        "mavlin-farms-orange": "#f79828",
+        "mavlin-krono-brown": "#5f281e",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

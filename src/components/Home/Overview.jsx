@@ -27,14 +27,14 @@ const Overview = () => {
           </div> */}
         </div>
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <img
             src={Overview3}
             alt="overview"
             className="w-full h-[300px] object-cover"
           />
           <div
-            className="relative bg-cover bg-center"
+            className="relative bg-cover bg-center hidden lg:block"
             style={{
               backgroundImage: `url(${Hero1})`,
             }}
@@ -49,7 +49,7 @@ const Overview = () => {
             </p>
           </div>
           <div
-            className="relative bg-cover bg-center"
+            className="relative bg-cover bg-center hidden lg:block"
             style={{
               backgroundImage: `url(${Hero1})`,
             }}

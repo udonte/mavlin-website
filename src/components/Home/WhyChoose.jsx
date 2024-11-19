@@ -28,9 +28,9 @@ const services = [
 
 const WhyChoose = () => {
   return (
-    <div className="px-24 py-24 w-full bg-gray-100">
+    <div className="px-8 py-8 lg:px-24 lg:py-24 w-full bg-gray-100">
       <div className="flex items-start justify-end w-full">
-        <div className="text-right w-1/2">
+        <div className="text-right w-full md:w-1/2">
           <p className="text-mavlin-gold uppercase">Why Partner with Us</p>
           <p className="font-arimo text-3xl text-mavlin-blue font-semibold">
             We bring a unique blend of expertise, innovation, and commitment to

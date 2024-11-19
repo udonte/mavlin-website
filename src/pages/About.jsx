@@ -8,6 +8,7 @@ import CoreValues from "../components/About/CoreValues";
 import OurTeam from "../components/About/OurTeam";
 import StaffVideo from "../components/About/StaffVideo";
 import Clients from "../components/Home/Clients";
+import MembershipSection from "../components/Home/Membership";
 
 const About = () => (
   <motion.div
@@ -21,6 +22,7 @@ const About = () => (
       <AboutHero />
       <StatsSection />
       <CompanyDescription />
+      <MembershipSection />
       <MissionAndVision />
       <CoreValues />
       <Clients />

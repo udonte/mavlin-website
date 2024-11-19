@@ -45,10 +45,10 @@ const serviceData = [
 
 const Services = () => {
   return (
-    <div className="px-24 py-24">
+    <div className="px-8 py-8 lg:px-24 lg:py-24">
       <div>
         <p className="text-mavlin-gold">OUR EXPERTISE AND EXPERIENCE</p>
-        <p className="font-arimo text-3xl text-mavlin-blue w-1/2 font-semibold">
+        <p className="font-arimo text-3xl text-mavlin-blue w-full md:w-1/2 font-semibold">
           We Offer Services that are up with the times and Spans Key Sectors
         </p>
       </div>

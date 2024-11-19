@@ -13,6 +13,7 @@ import Client9 from "../../assets/images/Home/clientsImg/lagosstate.png";
 import Client10 from "../../assets/images/Home/clientsImg/nigeria.png";
 import Client11 from "../../assets/images/Home/clientsImg/tricontinental.png";
 import Client12 from "../../assets/images/Home/clientsImg/JuliusBerger.png";
+import Client13 from "../../assets/images/Home/clientsImg/chessroc.png";
 
 const clients = [
   {
@@ -59,9 +60,10 @@ const clients = [
     id: 11,
     image: Client11,
   },
+
   {
-    id: 12,
-    image: Client12,
+    id: 13,
+    image: Client13,
   },
 ];
 
@@ -84,8 +86,12 @@ const Clients = () => {
               pauseOnHover={true}
             >
               {clients.map((client) => (
-                <div key={client.id} className="mx-4">
-                  <img src={client.image} alt="client" />
+                <div key={client.id} className="mx-4 w-[100px] md:w-[150px]">
+                  <img
+                    src={client.image}
+                    alt="client"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               ))}
             </Marquee>

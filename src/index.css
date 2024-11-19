@@ -13,3 +13,9 @@ body,
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
+
+img {
+  image-rendering: -webkit-optimize-contrast; /* For webkit browsers */
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}

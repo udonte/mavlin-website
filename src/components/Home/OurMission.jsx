@@ -13,13 +13,13 @@ const OurMission = () => {
 
       {/* Footer content */}
       <div className="relative z-10 ">
-        <div className="px-24 py-16">
-          <div className="w-full border-x border-mavlin-gold px-24 mx-auto">
+        <div className="px-8 py-8 lg:px-24 lg:py-16">
+          <div className="w-full border-x border-mavlin-gold px-8 lg:px-24 mx-auto">
             <p className="text-white mb-4">OUR MISSION</p>
-            <p className="text-WHITE mb-4 text-mavlin-gold uppercase text-2xl">
+            <p className="text-WHU mb-4 text-mavlin-gold uppercase text-2xl">
               Client Satisfaction{" "}
             </p>
-            <div className=" text-lg text-white font-arimo">
+            <div className=" lg:text-lg text-white font-arimo">
               We are passionate about driving sustainable development across
               sectors by delivering high-quality solutions and unparalleled
               service. We want to provide innovative{" "}

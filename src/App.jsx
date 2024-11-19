@@ -1,31 +1,38 @@
+// src/App.js
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-import { AnimatePresence } from "framer-motion";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
+import MavlinFarms from "./pages/MavlinFarms";
+import MavlinFlooring from "./pages/MavlinFlooring";
+import Layout from "./components/Layout";
+import Snowlandimmigration from "./pages/SnowlandImmigration";
 
 function App() {
   return (
     <Router>
-      <Header />
-      <main className="min-h-screen flex flex-col">
-        <AnimatePresence mode="wait">
-          <Routes>
+      <AnimatePresence mode="wait">
+        <Routes>
+          <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/mavlin-farms" element={<MavlinFarms />} />
+            <Route path="/mavlin-flooring" element={<MavlinFlooring />} />
+            <Route
+              path="/snowlandimmigration"
+              element={<Snowlandimmigration />}
+            />
             <Route path="*" element={<NotFound />} />
-          </Routes>
-        </AnimatePresence>
-      </main>
-      <Footer />
+          </Route>
+        </Routes>
+      </AnimatePresence>
     </Router>
   );
 }

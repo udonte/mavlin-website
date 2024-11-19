@@ -1,7 +1,18 @@
 import Mavlinlogo from "../assets/images/MavlinBlue.jpeg";
 import footerBackground from "../assets/images/Footer/bg.png"; // Add your background image here
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  const menuItems = [
+    { title: "Home", path: "/" },
+    { title: "About", path: "/about" },
+    { title: "Services", path: "/services" },
+    { title: "Projects", path: "/projects" },
+    { title: "Snowland Immigration", path: "/snowlandimmigration/#hero" },
+    { title: "Mavlin Farms", path: "/mavlin-farms/#hero" },
+    { title: "Mavlin - Kronodaeka Flooring", path: "/mavlin-flooring/#hero" },
+  ];
+
   return (
     <div
       className="relative bg-cover bg-center"
@@ -14,10 +25,10 @@ const Footer = () => {
 
       {/* Footer content */}
       <div className="relative z-10 ">
-        <div className="text-white px-24 py-16">
-          <div className="flex items-start justify-between">
+        <div className="text-white px-8 py-8 lg:px-24 lg:py-16">
+          <div className="flex flex-col md:flex-row gap-8 items-start justify-center md:justify-between">
             {/* Mavlin Logo and Social Media */}
-            <div className="flex items-start justify-start gap-8">
+            <div className="flex flex-col md:flex-row items-start justify-start gap-8">
               <div className="bg-white p-2">
                 <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[100px]" />
               </div>
@@ -29,23 +40,34 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div>
-              <div className="space-y-4">
-                <p className="cursor-pointer hover:text-gray-300 transition-colors">
-                  Home
-                </p>
-                <p className="cursor-pointer hover:text-gray-300 transition-colors">
-                  About
-                </p>
-                <p className="cursor-pointer hover:text-gray-300 transition-colors">
-                  Services
-                </p>
-                <p>Projects</p>
-              </div>
-            </div>
+            <nav className="flex flex-col items-start justify-start gap-2">
+              {menuItems.map((item) => (
+                <NavHashLink
+                  key={item.path}
+                  smooth
+                  className="hover:font-medium hover:text-mavlin-gold"
+                  to={item.path}
+                >
+                  {item.title}
+                </NavHashLink>
+              ))}
+            </nav>
+
             <div className="space-y-4">
-              <button className=" border px-4 py-2 border-white bg-transparent w-fit text-white hover:bg-black/10">
-                <p>Contact Us</p>
+              <button className="px-4 py-2">
+                <HashLink
+                  scroll={(el) => {
+                    const yOffset = -100; // Adjust the offset to your liking
+                    const y =
+                      el.getBoundingClientRect().top + window.scrollY + yOffset;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }}
+                  smooth
+                  to="contact-form"
+                  className={`py-2 px-4 font-medium bg-white text-mavlin-blue`}
+                >
+                  Contact Us
+                </HashLink>
               </button>
             </div>
           </div>

@@ -8,6 +8,7 @@ import WhyChoose from "../components/Home/WhyChoose";
 import StatsSection from "../components/Home/Stats";
 import OurMission from "../components/Home/OurMission";
 import Clients from "../components/Home/Clients";
+import MembershipSection from "../components/Home/Membership";
 
 const Home = () => (
   <motion.div
@@ -28,11 +29,12 @@ const Home = () => (
         exit={{ opacity: 0 }}
       >
         <AboutUs />
+        <Overview />
+        <Services />
+        <WhyChoose />
+        <MembershipSection />
+        <OurMission />
       </motion.div>
-      <Overview />
-      <Services />
-      <WhyChoose />
-      <OurMission />
       <Clients />
     </div>
   </motion.div>

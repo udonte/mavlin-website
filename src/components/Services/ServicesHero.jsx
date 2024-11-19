@@ -61,9 +61,9 @@ const ServicesHero = () => {
           Top QUALITY SERVICES
         </h1>
         <p className="text-sm md:text-base mb-6 text-left slide-in delay-150">
-          Our services are designed to cater to the diverse needs of businesses
-          in multiple sectors, delivering value through expertise and
-          dedication.
+          Our services include concept development through construction up to
+          final acceptance of the completed project, site inspection,
+          commissioning and management.
         </p>
         <button className="bg-transparent py-2 px-6 hover:bg-black/30 text-lg font-semibold border border-white slide-in delay-300">
           Discover more

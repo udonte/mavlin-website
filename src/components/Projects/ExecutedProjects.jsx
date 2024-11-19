@@ -132,6 +132,10 @@ const executedProjectsData = [
       "Construction of Office Complex for Julius Berger Port Harcourt, Rivers State, Nigeria.",
     client: "Julius Berger",
   },
+  {
+    title: "Procurement of VFD (TECO Westinghouse)",
+    client: "Chesroc Nigeria Limited",
+  },
 ];
 
 const ExecutedProjects = () => {
