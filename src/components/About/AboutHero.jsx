@@ -3,8 +3,6 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import HeroImage1 from "../../assets/images/Home/HeroImage1.png";
 import HeroImage2 from "../../assets/images/Home/HeroImage2.jpg";
 import HeroImage3 from "../../assets/images/Home/HeroImage3.jpg";
-// import HeroImage4 from "../../assets/images/Home/HeroImage1.png";
-// import HeroImage5 from "../../assets/images/Home/HeroImage2.jpg";
 
 const images = [HeroImage1, HeroImage2, HeroImage3];
 
@@ -27,7 +25,7 @@ const AboutHero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden bg-mavlin-blue/90 ">
+    <div className="relative w-full h-[80vh] overflow-hidden bg-mavlin-blue/90">
       {images.map((image, index) => (
         <div
           key={index}

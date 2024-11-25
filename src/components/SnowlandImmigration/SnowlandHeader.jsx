@@ -38,7 +38,11 @@ const SnowlandHeader = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">
           <HashLink smooth to="/mavlin-farms/#hero">
-            <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[250px]" />
+            <img
+              src={Mavlinlogo}
+              alt="Mavlin Logo"
+              className="w-[200px] md:w-[250px]"
+            />
           </HashLink>
         </h1>
         <nav className="lg:flex space-x-8 hidden">
