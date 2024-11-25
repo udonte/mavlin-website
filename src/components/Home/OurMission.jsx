@@ -1,4 +1,4 @@
-import footerBackground from "../../assets/images/footer/bg.png";
+import footerBackground from "../../assets/images/Footer/bg.png";
 
 const OurMission = () => {
   return (
