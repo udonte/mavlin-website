@@ -140,25 +140,31 @@ const executedProjectsData = [
 
 const ExecutedProjects = () => {
   return (
-    <div className="relative py-24 px-6 md:px-12 lg:px-24">
+    <div className="relative py-12 px-4 sm:px-6 md:px-12 lg:px-24">
       {/* Main Content */}
       <div className="relative z-10">
-        <div className="w-full md:w-1/2 flex flex-col text-center mx-auto my-16">
-          <p className="text-mavlin-gold uppercase">Executed Projects</p>
-          <p className="font-arimo text-3xl text-mavlin-blue font-semibold w-full">
+        <div className="w-full md:w-3/4 lg:w-1/2 flex flex-col text-center mx-auto mb-12">
+          <p className="text-mavlin-gold uppercase text-sm md:text-base">
+            Executed Projects
+          </p>
+          <p className="font-arimo text-2xl md:text-3xl text-mavlin-blue font-semibold w-full">
             Our Delivery Success Speaks For Itself
           </p>
         </div>
 
         <div className="overflow-x-auto">
-          <table className="min-w-full border border-mavlin-gold/40 text-left text-mavlin-blue">
+          <table className="min-w-full border border-mavlin-gold/40 text-left text-mavlin-blue text-sm md:text-base">
             <thead>
               <tr className="bg-gray-100">
-                <th className="py-3 px-4 border-b font-semibold">S/N</th>
-                <th className="py-3 px-4 border-b font-semibold">
+                <th className="py-3 px-2 md:px-4 border-b font-semibold">
+                  S/N
+                </th>
+                <th className="py-3 px-2 md:px-4 border-b font-semibold">
                   Contract Title
                 </th>
-                <th className="py-3 px-4 border-b font-semibold">Client</th>
+                <th className="py-3 px-2 md:px-4 border-b font-semibold">
+                  Client
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -167,9 +173,13 @@ const ExecutedProjects = () => {
                   key={index}
                   className="border-b border-mavlin-gold/40 font-nunito"
                 >
-                  <td className="py-3 px-4">{index + 1}</td>
-                  <td className="py-3 px-4">{project.title}</td>
-                  <td className="py-3 px-4">{project.client}</td>
+                  <td className="py-2 px-2 md:py-3 md:px-4">{index + 1}</td>
+                  <td className="py-2 px-2 md:py-3 md:px-4 break-words">
+                    {project.title}
+                  </td>
+                  <td className="py-2 px-2 md:py-3 md:px-4 break-words">
+                    {project.client}
+                  </td>
                 </tr>
               ))}
             </tbody>

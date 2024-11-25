@@ -22,10 +22,10 @@ const SnowlandFooter = () => {
 
       {/* Footer content */}
       <div className="relative z-10 ">
-        <div className="text-white px-24 py-16">
-          <div className="flex items-start justify-between">
+        <div className="text-white px-8 py-8 lg:px-24 lg:py-16">
+          <div className="flex flex-col md:flex-row items-start justify-between">
             {/* Mavlin Logo and Social Media */}
-            <div className="flex items-start justify-start gap-8">
+            <div className="flex flex-col md:flex-row items-start justify-start gap-8">
               <div className="bg-white p-2">
                 <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[200px]" />
               </div>
@@ -37,7 +37,7 @@ const SnowlandFooter = () => {
             </div>
 
             {/* Quick Links */}
-            <nav className="flex flex-col items-start justify-start gap-1">
+            <nav className="flex flex-col items-start justify-start gap-1 mt-8 lg:mt-0">
               {menuItems.map((item) => (
                 <NavHashLink
                   key={item.path}
@@ -56,7 +56,7 @@ const SnowlandFooter = () => {
               </NavLink>
             </nav>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mt-8 lg:mt-0">
               <button className="px-4 py-2">
                 <HashLink
                   scroll={(el) => {
@@ -76,7 +76,7 @@ const SnowlandFooter = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 px-24 py-12">
+        <div className="border-t border-gray-700 px-8 lg:px-24 py-12">
           <div className="container mx-auto text-left text-sm text-white">
             <p>
               &copy; {new Date().getFullYear()} Snowland Immigration, All rights

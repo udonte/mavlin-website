@@ -50,7 +50,7 @@ const FloorCategories = () => {
           {tabs.map((tab, index) => (
             <button
               key={index}
-              className={`px-2 py-1 text-lg font-semibold transition-all duration-400 text-left font-karla ${
+              className={`px-2 py-1 text-xs  md:text-lg font-semibold transition-all duration-400 text-left font-karla ${
                 activeTab === index
                   ? "border-b border-red-600 text-mavlin-krono-brown"
                   : "text-mavlin-krono-brown/70 hover:text-mavlin-krono-brown"

@@ -1,6 +1,7 @@
 import Mavlinlogo from "../assets/images/MavlinBlue.jpeg";
 import footerBackground from "../assets/images/Footer/bg.png"; // Add your background image here
 import { HashLink, NavHashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const menuItems = [
@@ -54,20 +55,19 @@ const Footer = () => {
             </nav>
 
             <div className="space-y-4">
-              <button className="px-4 py-2">
-                <HashLink
-                  scroll={(el) => {
-                    const yOffset = -100; // Adjust the offset to your liking
-                    const y =
-                      el.getBoundingClientRect().top + window.scrollY + yOffset;
-                    window.scrollTo({ top: y, behavior: "smooth" });
-                  }}
-                  smooth
-                  to="contact-form"
-                  className={`py-2 px-4 font-medium bg-white text-mavlin-blue`}
+              <button className="px-4 py-2 hidden lg:block">
+                <NavLink
+                  to={"/contact#contact-form"}
+                  className={({ isActive }) =>
+                    `py-2 px-4 font-medium ${
+                      isActive
+                        ? "bg-white  text-mavlin-blue"
+                        : "bg-mavlin-blue text-white"
+                    }`
+                  }
                 >
                   Contact Us
-                </HashLink>
+                </NavLink>
               </button>
             </div>
           </div>

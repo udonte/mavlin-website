@@ -1,9 +1,9 @@
 const CompanyDescription = () => {
   return (
-    <div className="px-24 py-16">
-      <div className="w-full border-x border-mavlin-gold px-24 mx-auto">
+    <div className="px-8 py-8 lg:px-24 lg:py-16">
+      <div className="w-full border-x border-mavlin-gold px-8 lg:px-24 mx-auto">
         <p className="text-mavlin-gold mb-8">OVERVIEW</p>
-        <div className=" text-2xl text-mavlin-blue font-arimo">
+        <div className=" lg:text-2xl text-mavlin-blue font-arimo">
           Mavlin is a global brand with operations across Nigeria and Canada. As
           an EPC{" "}
           <span className="text-mavlin-gold">

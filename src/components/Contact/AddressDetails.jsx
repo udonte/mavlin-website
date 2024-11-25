@@ -4,7 +4,7 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 const AddressDetails = () => {
   return (
-    <div className="px-24 py-24">
+    <div className="px-8 py-8 lg:px-24 lg:py-24">
       <div className="">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321200.72566193534!2d-114.41816150612154!3d51.02758962008554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sng!4v1729975169582!5m2!1sen!2sng"
@@ -18,7 +18,7 @@ const AddressDetails = () => {
       </div>
 
       {/* address */}
-      <div className="flex items-center gap-4 mt-16">
+      <div className="flex flex-col md:flex-row items-center gap-4 mt-16">
         <div className="w-[400px] text-mavlin-blue p-8 border-l-4 border-mavlin-gold shadow h-[200px]">
           <p className="text-[10px] text-gray-900 mb-4">
             MAVLGIN GOBAL SERVICE LTD, CANADA

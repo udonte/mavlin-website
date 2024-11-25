@@ -6,6 +6,7 @@ import Hero1 from "../../assets/images/Home/HeroImage1.png";
 import Logo from "../../assets/images/MavlinWhite.png";
 import Mavlinlogo from "../../assets/images/MavlinBlue.jpeg";
 import { FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Overview = () => {
   return (
@@ -44,7 +45,9 @@ const Overview = () => {
             <p className="absolute p-4 bottom-4 text-white z-10 text-sm flex items-center gap-2">
               Check our Services
               <button className="bg-transparent border-l border-white hover:bg-gray/40 p-2 text-white">
-                <FaArrowRight />
+                <NavLink to={"/services"}>
+                  <FaArrowRight />
+                </NavLink>
               </button>
             </p>
           </div>
@@ -59,7 +62,9 @@ const Overview = () => {
             <p className="absolute p-4 bottom-4 text-white z-10 text-sm flex items-center gap-2">
               Check our Projects
               <button className="bg-transparent border-l border-white hover:bg-gray/40 p-2 text-white">
-                <FaArrowRight />
+                <NavLink to={"/projects"}>
+                  <FaArrowRight />
+                </NavLink>
               </button>
             </p>
           </div>

@@ -62,9 +62,9 @@ const ContactForm = () => {
 
       {/* Footer content */}
       <div className="relative z-10 min-h-screen w-full">
-        <div className="flex flex-col md:flex-row gap-8 px-24 py-24">
+        <div className="flex flex-col md:flex-row gap-8 px-8 py-8 lg:px-24 lg:py-24">
           {/* Form Section */}
-          <div className="md:w-2/3">
+          <div className="w-full md:w-2/3">
             <div className="mb-16">
               <>
                 <p className="text-mavlin-gold text-sm tracking-widest mb-1">
@@ -82,7 +82,7 @@ const ContactForm = () => {
             )}
             <form onSubmit={handleSubmit} noValidate>
               {/* name and email */}
-              <div className="flex items-center gap-4 mb-2 w-full">
+              <div className="flex flex-col md:flex-row items-center gap-4 mb-2 w-full">
                 <div className="w-full">
                   <label htmlFor="name" className="block text-white">
                     Name
@@ -118,7 +118,7 @@ const ContactForm = () => {
               </div>
 
               {/* location and subject */}
-              <div className="flex items-center gap-4 mb-2 w-full">
+              <div className="flex flex-col md:flex-row items-center gap-4 mb-2 w-full">
                 <div className="w-full">
                   <label htmlFor="location" className="block text-white">
                     Location
@@ -184,7 +184,7 @@ const ContactForm = () => {
           </div>
 
           {/* Image Section */}
-          <div className="md:w-1/3 hidden md:flex items-center justify-center p-6 h-500px">
+          <div className="w-full md:w-1/3 hidden md:flex items-center justify-center p-6 h-500px">
             <img
               src={FormImage}
               alt="Office Environment"

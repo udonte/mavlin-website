@@ -6,9 +6,9 @@ const ProcessingExcellence = () => {
   return (
     <section
       id=""
-      className="py-24 px-24 flex items-start justify-between gap-8"
+      className="px-8 py-8 lg:py-24 lg:px-24 flex flex-col-reverse md:flex-row items-start justify-between gap-8"
     >
-      <div className="h-[500px] w-1/2 shadow-2xl">
+      <div className="h-[500px] w-full md:w-1/2 shadow-2xl">
         <img
           src={About}
           alt="agriculture"

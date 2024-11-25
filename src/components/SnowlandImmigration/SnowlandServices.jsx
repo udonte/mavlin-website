@@ -53,7 +53,10 @@ const services = [
 
 const SnowlandServices = () => {
   return (
-    <section id="services" className="px-8 md:px-24 py-24 w-full bg-gray-100">
+    <section
+      id="services"
+      className="px-8 py-8 lg:px-24 lg:py-24 w-full bg-gray-100"
+    >
       <div className="flex items-start w-full mb-12">
         <div className="text-left w-full md:w-1/2">
           <p className="text-red-600 uppercase">Our Services</p>

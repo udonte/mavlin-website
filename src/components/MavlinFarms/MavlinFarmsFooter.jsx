@@ -22,10 +22,10 @@ const MavlinFarmsFooter = () => {
 
       {/* Footer content */}
       <div className="relative z-10 ">
-        <div className="text-white px-24 py-16">
-          <div className="flex items-start justify-between">
+        <div className="text-white px-8 py-8 lg:px-24 lg:py-16">
+          <div className="flex flex-col md:flex-row items-start justify-between">
             {/* Mavlin Logo and Social Media */}
-            <div className="flex items-start justify-start gap-8">
+            <div className="flex flex-col md:flex-row items-start justify-start gap-8">
               <div className="bg-white p-2">
                 <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[100px]" />
               </div>
@@ -36,7 +36,7 @@ const MavlinFarmsFooter = () => {
             </div>
 
             {/* Quick Links */}
-            <nav className="flex flex-col items-start justify-start gap-1">
+            <nav className="flex flex-col items-start justify-start gap-1 mt-8 md:mt-0">
               {menuItems.map((item) => (
                 <NavHashLink
                   key={item.path}
@@ -55,7 +55,7 @@ const MavlinFarmsFooter = () => {
               </NavLink>
             </nav>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mt-8 md:mt-0">
               <button className=" border px-4 py-2 border-mavlin-farms-green bg-mavlin-farms-orange w-fit text-mavlin-farms-green hover:bg-mavlin-farms-orange/90">
                 <p>Contact Us</p>
               </button>

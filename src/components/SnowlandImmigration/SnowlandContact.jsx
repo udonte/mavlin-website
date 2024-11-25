@@ -64,7 +64,7 @@ const SnowlandContact = () => {
 
         {/* Footer content */}
         <div className="relative z-10 min-h-screen w-full">
-          <div className="flex flex-col md:flex-row gap-8 px-24 py-24">
+          <div className="flex flex-col md:flex-row gap-8 px-8 py-8 lg:px-24 lg:py-24">
             {/* Form Section */}
             <div className="md:w-2/3">
               <div className="mb-16">
@@ -82,7 +82,7 @@ const SnowlandContact = () => {
               )}
               <form onSubmit={handleSubmit} noValidate>
                 {/* name and email */}
-                <div className="flex items-center gap-4 mb-2 w-full">
+                <div className="flex flex-col md:flex-row items-center gap-4 mb-2 w-full">
                   <div className="w-full">
                     <label htmlFor="name" className="block text-white">
                       Name
@@ -120,7 +120,7 @@ const SnowlandContact = () => {
                 </div>
 
                 {/* location and subject */}
-                <div className="flex items-center gap-4 mb-2 w-full">
+                <div className="flex flex-col md:flex-row items-center gap-4 mb-2 w-full">
                   <div className="w-full">
                     <label htmlFor="location" className="block text-white">
                       Location
@@ -200,8 +200,8 @@ const SnowlandContact = () => {
       </div>
 
       {/* map */}
-      <div className="px-24 py-24 flex items-center gap-8">
-        <div className="w-2/3">
+      <div className="px-8 py-8 lg:px-24 lg:py-24 flex flex-col md:flex-row items-center gap-8">
+        <div className="w-full lg:w-2/3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43027008.77797233!2d-135.6583068297714!3d48.83608281697973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sng!4v1732006037366!5m2!1sen!2sng"
             width="100%"

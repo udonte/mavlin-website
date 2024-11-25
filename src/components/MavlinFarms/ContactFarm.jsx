@@ -64,7 +64,7 @@ const ContactFarm = () => {
 
         {/* Footer content */}
         <div className="relative z-10 min-h-screen w-full">
-          <div className="flex flex-col md:flex-row gap-8 px-24 py-24">
+          <div className="flex flex-col md:flex-row gap-8 px-8 py-8 lg:px-24 lg:py-24">
             {/* Form Section */}
             <div className="md:w-2/3">
               <div className="mb-16">
@@ -82,7 +82,7 @@ const ContactFarm = () => {
               )}
               <form onSubmit={handleSubmit} noValidate>
                 {/* name and email */}
-                <div className="flex items-center gap-4 mb-2 w-full">
+                <div className="flex flex-col md:flex-row items-center gap-4 mb-2 w-full">
                   <div className="w-full">
                     <label htmlFor="name" className="block text-white">
                       Name
@@ -120,7 +120,7 @@ const ContactFarm = () => {
                 </div>
 
                 {/* location and subject */}
-                <div className="flex items-center gap-4 mb-2 w-full">
+                <div className="flex flex-col md:flex-row items-center gap-4 mb-2 w-full">
                   <div className="w-full">
                     <label htmlFor="location" className="block text-white">
                       Location
@@ -200,8 +200,8 @@ const ContactFarm = () => {
       </div>
 
       {/* map */}
-      <div className="px-24 py-24 flex items-start gap-8">
-        <div className="flex-1">
+      <div className="px-8 py-8 lg:px-24 lg:py-24 flex flex-col md:flex-row items-start gap-8">
+        <div className="w-full md:flex-1">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.9773316615665!2d3.3843684415000856!3d6.649731304601695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b937d2adb7203%3A0x8234f96a8a708de7!2s15%20Lagos%20-%20Ibadan%20Expy%2C%20Ojodu%2C%20Agege%20102109%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1731856450445!5m2!1sen!2sng"
             width="100%"

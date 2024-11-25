@@ -6,13 +6,13 @@ const SnowlandAbout = () => {
   return (
     <section
       id="about"
-      className="py-24 px-24 flex items-start justify-between gap-16"
+      className="px-8 py-8 lg:py-24 lg:px-24 flex flex-col md:flex-row items-start justify-between gap-16"
     >
-      <div className="h-[400px] w-1/2 overflow-hidden">
+      <div className="h-[400px] w-full md:w-1/2 overflow-hidden">
         <img
           src={About}
           alt="agriculture"
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover md:object-contain"
         />
       </div>
       <div className=" w-full md:w-1/2 flex flex-col items-start gap-8 h-[500px]">
