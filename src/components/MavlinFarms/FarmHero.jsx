@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import HeroImage1 from "../../assets/images/MavlinFarms/Hero1.jpg";
-import HeroImage2 from "../../assets/images/MavlinFarms/Hero2.jpg";
-import HeroImage3 from "../../assets/images/MavlinFarms/Hero3.jpg";
+import HeroImage1 from "../../assets/images/MavlinFarms/hero1.jpg";
+import HeroImage2 from "../../assets/images/MavlinFarms/hero2.jpg";
+import HeroImage3 from "../../assets/images/MavlinFarms/hero3.jpg";
 
 // Mock data for images and their associated text
 const slides = [
