@@ -3,7 +3,6 @@ import Overview2 from "../../assets/images/Home/Overview2.png";
 import Overview3 from "../../assets/images/Home/Overview3.png";
 import Hero2 from "../../assets/images/Footer/bg.png";
 import Hero1 from "../../assets/images/Home/HeroImage1.png";
-import Logo from "../../assets/images/MavlinWhite.png";
 import Mavlinlogo from "../../assets/images/MavlinBlue.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
