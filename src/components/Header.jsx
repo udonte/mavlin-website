@@ -21,6 +21,7 @@ const mobileItems = [
   { title: "Snowland Immigration", path: "/snowlandimmigration/#hero" },
   { title: "Mavlin Farms", path: "/mavlin-farms/#hero" },
   { title: "Mavlin - Kronodaeka Flooring", path: "/mavlin-flooring/#hero" },
+  { title: "Contact Us", path: "/contact#contact-form" },
 ];
 
 const Header = () => {
@@ -145,7 +146,7 @@ const Header = () => {
                   key={i}
                   to={item.path}
                   className={({ isActive }) =>
-                    `block px-4 py-2  font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white ${
+                    `block px-4 py-2 font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white ${
                       isActive
                         ? "bg-mavlin-blue text-white"
                         : "text-mavlin-blue bg-white"

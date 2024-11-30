@@ -60,6 +60,10 @@ const clients = [
     id: 11,
     image: Client11,
   },
+  {
+    id: 12,
+    image: Client12,
+  },
 
   {
     id: 13,

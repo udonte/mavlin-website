@@ -12,6 +12,12 @@ import procurement from "../../assets/images/Home/procurement.png";
 // Mock data for services
 const serviceData = [
   {
+    image: oilGas,
+    title: "Oil and Gas",
+    description:
+      "Oil and Gas supply to all sectors and industries in the world",
+  },
+  {
     image: construction,
     title: "Construction",
     description: "Sustainable and efficient power solutions for modern needs.",
@@ -23,12 +29,6 @@ const serviceData = [
       "Reliable solutions in communications infrastructure to keep you connected.",
   },
 
-  {
-    image: oilGas,
-    title: "Oil and Gas",
-    description:
-      "Oil and Gas supply to all sectors and industries in the world",
-  },
   {
     image: agriculture,
     title: "Agriculture",

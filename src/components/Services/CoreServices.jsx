@@ -15,10 +15,28 @@ import HeroImage12 from "../../assets/images/Services/automobile.jpg";
 
 const servicesData = [
   {
+    title: "Oil and Gas",
+    description:
+      "Our oil and gas services cover both upstream and downstream operations, including exploration, drilling, refining, and distribution. We specialize in project management, wellhead installation, pipeline construction, and maintenance for onshore and offshore facilities. Our services ensure operational safety, compliance, and efficiency in the energy sector by leveraging advanced technologies and skilled expertise.",
+    image: HeroImage8,
+  },
+  {
     title: "Construction (Civil and Mechanical Engineering)",
     description:
       "Our construction services encompass a full range of civil and mechanical engineering projects. We handle roads and buildings construction, as well as their ongoing upgrades and maintenance, ensuring durability and safety. In building systems, we specialize in creating equipment shelters and accommodation facilities suitable for both offshore and onshore environments. Our expertise extends to steel structures, where we manage the design, fabrication, and construction of storage tanks and platforms. Additionally, we provide comprehensive electrical supply and service solutions to support diverse construction and operational needs.",
     image: HeroImage1,
+  },
+  {
+    title: "Energy Solutions",
+    description:
+      "Our energy solutions cater to both renewable and non-renewable sectors, promoting sustainable practices and efficient resource utilization. We develop solar and wind energy projects, along with conventional power generation facilities. Our energy consulting services focus on optimizing energy consumption, reducing costs, and implementing environmentally friendly strategies to meet global energy demands.",
+    image: HeroImage9,
+  },
+  {
+    title: "Automobile Services",
+    description:
+      "Our automobile services encompass comprehensive fleet management, vehicle maintenance, and repair. We support businesses in optimizing their transportation logistics, ensuring vehicles are maintained for maximum efficiency and minimal downtime. Our team also offers consultancy for automotive supply chain management, enhancing operational efficiency and reducing costs.",
+    image: HeroImage12,
   },
   {
     title: "Telecommunication Infrastructure Provider",
@@ -51,40 +69,24 @@ const servicesData = [
     image: HeroImage6,
   },
   {
-    title: "Other Services",
+    title: "Agriculture",
     description:
-      "We offer specialized services that include wellhead maintenance and configuration to support efficient and safe oil and gas extraction processes. Our team provides torquing of connections, pressure testing, and installation of valve assemblies (also known as Christmas trees) for robust well control. Additionally, we provide expertise in running tools for drilling and production operations, pipeline works to support fluid transportation, and fabrication services tailored to client specifications.",
-    image: HeroImage7,
+      "Our agricultural services focus on enhancing productivity and sustainability within the farming industry. We offer consultancy for crop management, soil improvement, and supply chain optimization, helping farmers and agribusinesses achieve efficient resource use and increase yield. Our services also include modern agricultural techniques and equipment to promote sustainable farming practices.",
+    image: HeroImage11,
   },
-  {
-    title: "Oil and Gas",
-    description:
-      "Our oil and gas services cover both upstream and downstream operations, including exploration, drilling, refining, and distribution. We specialize in project management, wellhead installation, pipeline construction, and maintenance for onshore and offshore facilities. Our services ensure operational safety, compliance, and efficiency in the energy sector by leveraging advanced technologies and skilled expertise.",
-    image: HeroImage8,
-  },
-  {
-    title: "Energy Solutions",
-    description:
-      "Our energy solutions cater to both renewable and non-renewable sectors, promoting sustainable practices and efficient resource utilization. We develop solar and wind energy projects, along with conventional power generation facilities. Our energy consulting services focus on optimizing energy consumption, reducing costs, and implementing environmentally friendly strategies to meet global energy demands.",
-    image: HeroImage9,
-  },
+
   {
     title: "Consultancy",
     description:
       "We provide expert consultancy services to support businesses across industries in achieving their goals. Our services include project feasibility analysis, risk management, operational improvement, and regulatory compliance. We work closely with clients to develop tailored solutions that align with their strategic objectives, enabling them to maximize efficiency and growth while mitigating potential risks.",
     image: HeroImage10,
   },
+
   {
-    title: "Agriculture",
+    title: "Other Services",
     description:
-      "Our agricultural services focus on enhancing productivity and sustainability within the farming industry. We offer consultancy for crop management, soil improvement, and supply chain optimization, helping farmers and agribusinesses achieve efficient resource use and increase yield. Our services also include modern agricultural techniques and equipment to promote sustainable farming practices.",
-    image: HeroImage11,
-  },
-  {
-    title: "Automobile Services",
-    description:
-      "Our automobile services encompass comprehensive fleet management, vehicle maintenance, and repair. We support businesses in optimizing their transportation logistics, ensuring vehicles are maintained for maximum efficiency and minimal downtime. Our team also offers consultancy for automotive supply chain management, enhancing operational efficiency and reducing costs.",
-    image: HeroImage12,
+      "We offer specialized services that include wellhead maintenance and configuration to support efficient and safe oil and gas extraction processes. Our team provides torquing of connections, pressure testing, and installation of valve assemblies (also known as Christmas trees) for robust well control. Additionally, we provide expertise in running tools for drilling and production operations, pipeline works to support fluid transportation, and fabrication services tailored to client specifications.",
+    image: HeroImage7,
   },
 ];
 

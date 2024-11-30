@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import HeroImage1 from "../../assets/images/Home/HeroImage1.png";
 import HeroImage2 from "../../assets/images/Home/HeroImage2.jpg";
 import HeroImage3 from "../../assets/images/Home/HeroImage3.jpg";
+import { Link } from "react-router-dom";
 
 const images = [HeroImage1, HeroImage2, HeroImage3];
 
@@ -68,7 +69,7 @@ const Hero = () => {
           project at a time.
         </p>
         <button className="bg-transparent py-2 px-6 hover:bg-black/30 text-lg font-semibold border border-white slide-in delay-300">
-          Discover more
+          <Link to={"/services"}>Discover more</Link>
         </button>
       </div>
 
