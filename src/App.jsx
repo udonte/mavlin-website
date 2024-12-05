@@ -11,6 +11,7 @@ import MavlinFarms from "./pages/MavlinFarms";
 import MavlinFlooring from "./pages/MavlinFlooring";
 import Layout from "./components/Layout";
 import Snowlandimmigration from "./pages/SnowlandImmigration";
+import HarayaRestaurants from "./pages/HarayaRestaurants";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/mavlin-farms" element={<MavlinFarms />} />
             <Route path="/mavlin-flooring" element={<MavlinFlooring />} />
+            <Route path="/harayarestaurants" element={<HarayaRestaurants />} />
             <Route
               path="/snowlandimmigration"
               element={<Snowlandimmigration />}

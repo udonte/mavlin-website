@@ -9,6 +9,8 @@ import MavlinFarmsFooter from "./MavlinFarms/MavlinFarmsFooter";
 import MavlinFlooringFooter from "./MavlinFlooring/MavlinFlooringFooter";
 import SnowlandHeader from "./SnowlandImmigration/SnowlandHeader";
 import SnowlandFooter from "./SnowlandImmigration/SnowlandFooter";
+import HarayaHeader from "./Haraya/HarayaHeader";
+import HarayaFooter from "./Haraya/HarayaFooter";
 
 const Layout = () => {
   const location = useLocation();
@@ -23,6 +25,8 @@ const Layout = () => {
     headerComponent = <MavlinFlooringHeader />;
   } else if (location.pathname.startsWith("/snowlandimmigration")) {
     headerComponent = <SnowlandHeader />;
+  } else if (location.pathname.startsWith("/harayarestaurant")) {
+    headerComponent = <HarayaHeader />;
   } else {
     headerComponent = <Header />;
   }
@@ -34,6 +38,8 @@ const Layout = () => {
     footerComponent = <MavlinFlooringFooter />;
   } else if (location.pathname.startsWith("/snowlandimmigration")) {
     footerComponent = <SnowlandFooter />;
+  } else if (location.pathname.startsWith("/harayarestaurant")) {
+    footerComponent = <HarayaFooter />;
   } else {
     footerComponent = <Footer />;
   }

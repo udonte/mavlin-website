@@ -21,7 +21,7 @@ const KronoAbout = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className=" w-full md:w-1/2 flex flex-col items-start gap-4 justify-between h-[500px]">
+        <div className=" w-full md:w-1/2 flex flex-col items-start gap-4 justify-between">
           <p className="text-4xl font-bold text-mavlin-krono-brown font-Karla uppercase">
             WHY SWISS KRONO WOOD FLOORING TILES?
           </p>

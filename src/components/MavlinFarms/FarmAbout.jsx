@@ -8,7 +8,7 @@ const FarmAbout = () => {
       id="about"
       className="px-8 py-2 lg:py-24 lg:px-24 flex flex-col md:flex-row items-start justify-between gap-8"
     >
-      <div className=" w-full md:w-1/2 flex flex-col items-start justify-between h-[500px]">
+      <div className=" w-full md:w-1/2 flex flex-col items-start justify-between">
         <p className="text-4xl font-bold text-mavlin-farms-green font-montserratAlternates uppercase">
           About Us
         </p>
