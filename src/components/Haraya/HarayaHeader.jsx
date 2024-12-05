@@ -11,11 +11,9 @@ const HarayaHeader = () => {
   const [MobileNav, setMobileNav] = useState(false);
 
   const menuItems = [
-    { title: "Home", path: "/harayarestaurants/#hero" },
-    { title: "About", path: "/harayarestaurants/#about" },
-    { title: "Our Offerings", path: "/harayarestaurants/#services" },
-    // { title: "Box Program", path: "/mavlin-farms/#boxProgram" },
-    // { title: "FAQs", path: "/mavlin-farms/#farm-faqs" },
+    { title: "HOME", path: "/harayarestaurants/#hero" },
+    { title: "ABOUT", path: "/harayarestaurants/#about" },
+    { title: "OUR OFFERINGS", path: "/harayarestaurants/#services" },
   ];
 
   const mobileItems = [

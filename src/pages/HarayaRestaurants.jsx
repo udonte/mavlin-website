@@ -4,6 +4,7 @@ import HarayaHero from "../components/Haraya/HarayaHero";
 import HarayaAbout from "../components/Haraya/HarayaAbout";
 import HarayaServices from "../components/Haraya/HarayaServices";
 import HarayaContact from "../components/Haraya/HarayaContact";
+import HarayaGallery from "../components/Haraya/HarayaGallery";
 
 const HarayaRestaurants = () => (
   <motion.div
@@ -25,6 +26,7 @@ const HarayaRestaurants = () => (
       >
         <HarayaAbout />
         <HarayaServices />
+        <HarayaGallery />
         <HarayaContact />
       </motion.div>
     </div>

@@ -86,7 +86,6 @@ const Clients = () => {
             <Marquee
               className="w-full flex items-center justify-center"
               speed={25}
-              gradient={true}
               pauseOnHover={true}
             >
               {clients.map((client) => (
