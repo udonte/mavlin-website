@@ -20,7 +20,7 @@ const mobileItems = [
   { title: "Projects", path: "/projects" },
   { title: "Snowland Immigration", path: "/snowlandimmigration/#hero" },
   { title: "Mavlin Farms", path: "/mavlin-farms/#hero" },
-  { title: "Mavlin - Kronodaeka Flooring", path: "/mavlin-flooring/#hero" },
+  { title: "Kronodaeka Flooring", path: "/mavlin-flooring/#hero" },
   { title: "Haraya Restaurants", path: "/harayarestaurants/#hero" },
   { title: "Contact Us", path: "/contact#contact-form" },
 ];
@@ -97,7 +97,7 @@ const Header = () => {
                   to={"/mavlin-flooring/#hero"}
                   className="block px-4 py-2 text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
                 >
-                  Mavlin Flooring
+                  Kronodaeka Flooring
                 </NavLink>
                 <NavLink
                   to={"/harayarestaurants/#hero"}

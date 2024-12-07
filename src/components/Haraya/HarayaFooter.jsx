@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Mavlinlogo from "../../assets/images/Haraya/Haraya-Restaurant-Logo-web-White.png";
-import footerBackground from "../../assets/images/MavlinFarms/hero1.jpg"; // Add your background image here
+import footerBackground from "../../assets/images/Haraya/haraya3.jpg"; // Add your background image here
 import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const HarayaFooter = () => {

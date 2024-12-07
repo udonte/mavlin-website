@@ -13,7 +13,7 @@ import Client9 from "../../assets/images/Home/clientsImg/lagosstate.png";
 import Client10 from "../../assets/images/Home/clientsImg/nigeria.png";
 import Client11 from "../../assets/images/Home/clientsImg/tricontinental.png";
 import Client12 from "../../assets/images/Home/clientsImg/JuliusBerger.png";
-import Client13 from "../../assets/images/Home/clientsImg/chessroc.png";
+import Client13 from "../../assets/images/Home/clientsImg/chesroc.jpg";
 
 const clients = [
   {
