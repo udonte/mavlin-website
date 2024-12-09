@@ -5,9 +5,9 @@ import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const MavlinFlooringFooter = () => {
   const menuItems = [
-    { title: "Back to Top", path: "/mavlin-flooring/#hero" },
-    { title: "About", path: "/mavlin-flooring/#about" },
-    { title: "Category", path: "/mavlin-flooring/#category" },
+    { title: "Back to Top", path: "/kronodaekaflooring/#hero" },
+    { title: "About", path: "/kronodaekaflooring/#about" },
+    { title: "Category", path: "/kronodaekaflooring/#category" },
   ];
 
   return (
@@ -67,7 +67,7 @@ const MavlinFlooringFooter = () => {
                     window.scrollTo({ top: y, behavior: "smooth" });
                   }}
                   smooth
-                  to="mavlin-flooring/#krono-contact-form"
+                  to="kronodaekaflooring/#krono-contact-form"
                   className={`py-2 px-4 font-medium bg-red-600 text-white`}
                 >
                   Contact Us

@@ -21,7 +21,7 @@ const Layout = () => {
   // header
   if (location.pathname.startsWith("/mavlin-farms")) {
     headerComponent = <MavlinFarmsHeader />;
-  } else if (location.pathname.startsWith("/mavlin-flooring")) {
+  } else if (location.pathname.startsWith("/kronodaekaflooring")) {
     headerComponent = <MavlinFlooringHeader />;
   } else if (location.pathname.startsWith("/snowlandimmigration")) {
     headerComponent = <SnowlandHeader />;
@@ -34,7 +34,7 @@ const Layout = () => {
   // footer
   if (location.pathname.startsWith("/mavlin-farms")) {
     footerComponent = <MavlinFarmsFooter />;
-  } else if (location.pathname.startsWith("/mavlin-flooring")) {
+  } else if (location.pathname.startsWith("/kronodaekaflooring")) {
     footerComponent = <MavlinFlooringFooter />;
   } else if (location.pathname.startsWith("/snowlandimmigration")) {
     footerComponent = <SnowlandFooter />;

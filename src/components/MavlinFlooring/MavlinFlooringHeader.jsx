@@ -11,16 +11,16 @@ const MavlinFlooringHeader = () => {
   const [MobileNav, setMobileNav] = useState(false);
 
   const menuItems = [
-    { title: "Home", path: "/mavlin-flooring/#hero" },
-    { title: "About", path: "/mavlin-flooring/#about" },
-    { title: "Category", path: "/mavlin-flooring/#category" },
+    { title: "Home", path: "/kronodaekaflooring/#hero" },
+    { title: "About", path: "/kronodaekaflooring/#about" },
+    { title: "Category", path: "/kronodaekaflooring/#category" },
   ];
 
   const mobileItems = [
-    { title: "Home", path: "/mavlin-flooring/#hero" },
-    { title: "About", path: "/mavlin-flooring/#about" },
-    { title: "Category", path: "/mavlin-flooring/#category" },
-    { title: "Contact", path: "/mavlin-flooring/#krono-contact-form" },
+    { title: "Home", path: "/kronodaekaflooring/#hero" },
+    { title: "About", path: "/kronodaekaflooring/#about" },
+    { title: "Category", path: "/kronodaekaflooring/#category" },
+    { title: "Contact", path: "/kronodaekaflooring/#krono-contact-form" },
   ];
 
   const toggleDropdown = () => {
@@ -45,7 +45,7 @@ const MavlinFlooringHeader = () => {
             <NavHashLink
               key={item.path}
               smooth
-              aria-disabled={item.path === "/mavlin-flooring/#shop"}
+              aria-disabled={item.path === "/kronodaekaflooring/#shop"}
               className="font-bold hover:border-b-2 border-red-600"
               to={item.path}
               activeClassName="border-b-2 border-mavlin-farms-orange"
@@ -64,7 +64,7 @@ const MavlinFlooringHeader = () => {
               window.scrollTo({ top: y, behavior: "smooth" });
             }}
             smooth
-            to="mavlin-flooring/#krono-contact-form"
+            to="kronodaekaflooring/#krono-contact-form"
             className={`py-2 px-4 font-medium bg-red-600 text-white`}
           >
             Contact Us
