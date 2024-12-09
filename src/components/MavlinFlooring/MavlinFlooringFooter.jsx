@@ -30,10 +30,9 @@ const MavlinFlooringFooter = () => {
                 <img src={Mavlinlogo} alt="Mavlin Logo" className="w-[200px]" />
               </div>
               <div className="w-full md:w-[344px] text-sm leading-6">
-                As the West African partner for Swiss Krono Flooring, Mavlin
-                Projects Limited, under license from Krondaeka Ltd., provides
-                premium wood flooring tiles, setting standards in quality and
-                durability
+                SWISS KRONO stands out as a premium choice for laminate wood
+                flooring due to its combination of high-quality materials,
+                advanced technology, and diverse design options.
               </div>
             </div>
 

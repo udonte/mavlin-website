@@ -5,14 +5,6 @@ import { HashLink } from "react-router-hash-link";
 const KronoAbout = () => {
   return (
     <section id="about" className="px-8 py-8 lg:py-24 lg:px-24 ">
-      <div className="w-full border-x border-mavlin-gold px-8 lg:px-24 mx-auto mb-24">
-        <div className=" md:text-2xl text-mavlin-krono-brown font-arimo">
-          Mavlin Projects Limited, under the license of Krondaeka Ltd, the sole
-          partner of Swiss Krono Flooring in West Africa, stocks and deliver the
-          very best of Swiss Krono wood flooring tiles.
-        </div>
-      </div>
-
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         <div className="h-[500px] w-full md:w-1/2 shadow-xl border border-mavlin-krono-brown/50">
           <img
