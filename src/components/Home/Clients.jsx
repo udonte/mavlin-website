@@ -14,6 +14,7 @@ import Client10 from "../../assets/images/Home/clientsImg/nigeria.png";
 import Client11 from "../../assets/images/Home/clientsImg/tricontinental.png";
 import Client12 from "../../assets/images/Home/clientsImg/JuliusBerger.png";
 import Client13 from "../../assets/images/Home/clientsImg/chesroc.jpg";
+import Client14 from "../../assets/images/Home/clientsImg/acedriving.png";
 
 const clients = [
   {
@@ -68,6 +69,10 @@ const clients = [
   {
     id: 13,
     image: Client13,
+  },
+  {
+    id: 14,
+    image: Client14,
   },
 ];
 

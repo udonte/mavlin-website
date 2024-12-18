@@ -21,7 +21,10 @@ const mobileItems = [
   { title: "Snowland Immigration", path: "/snowlandimmigration/#hero" },
   { title: "Mavlin Farms", path: "/mavlin-farms/#hero" },
   { title: "Kronodaeka Flooring", path: "/kronodaekaflooring/#hero" },
-  { title: "Haraya Restaurants", path: "/harayarestaurants/#hero" },
+  {
+    title: "Ace Center Nigeria Limited",
+    path: "https://www.acecenterdrivingschool.com.ng",
+  },
   { title: "Contact Us", path: "/contact#contact-form" },
 ];
 
@@ -105,6 +108,14 @@ const Header = () => {
                 >
                   Haraya Restaurants
                 </NavLink>
+                <a
+                  href="https://www.acecenterdrivingschool.com.ng"
+                  className="block px-4 py-2 text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ace Center Nigeria Limited
+                </a>
               </motion.div>
             )}
           </div>
@@ -143,19 +154,29 @@ const Header = () => {
               onMouseLeave={() => setMobileNav(false)}
             >
               {mobileItems.map((item, i) => (
-                <NavLink
-                  key={i}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white ${
-                      isActive
-                        ? "bg-mavlin-blue text-white"
-                        : "text-mavlin-blue bg-white"
-                    }`
-                  }
-                >
-                  {item.title}
-                </NavLink>
+                <>
+                  <NavLink
+                    key={i}
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white ${
+                        isActive
+                          ? "bg-mavlin-blue text-white"
+                          : "text-mavlin-blue bg-white"
+                      }`
+                    }
+                  >
+                    {item.title}
+                  </NavLink>
+                  <a
+                    href="https://www.acecenterdrivingschool.com.ng"
+                    className="block px-4 py-2 font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ace Center Nigeria Limited
+                  </a>
+                </>
               ))}
             </motion.div>
           )}

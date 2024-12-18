@@ -242,7 +242,7 @@ const SnowlandContact = () => {
                 <div className="text-black ">
                   <p className="text-[8px]">SNOWLAND EMAIL</p>
                   <p className="text-sm font-medium mt-1">
-                    nigeria@snowlandimmigration
+                    nigeria@snowlandimmigration.com
                   </p>
                 </div>
               </div>
