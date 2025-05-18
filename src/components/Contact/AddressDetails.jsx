@@ -21,7 +21,7 @@ const AddressDetails = () => {
       <div className="flex flex-col md:flex-row items-center gap-4 mt-16">
         <div className="w-[400px] text-mavlin-blue p-8 border-l-4 border-mavlin-gold shadow h-[200px]">
           <p className="text-[10px] text-gray-900 mb-4">
-            MAVLGIN GOBAL SERVICE LTD, CANADA
+            MAVLIN GLOBAL SERVICE LTD, CANADA
           </p>
           <p className=" font-montserratAlternates font-bold">
             Nexus Business Centre, <br /> 3149 5th Avenue, <br /> NE Upper Unit

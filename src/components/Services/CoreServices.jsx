@@ -5,13 +5,13 @@ import HeroImage2 from "../../assets/images/Services/telecomms.jpg";
 import HeroImage3 from "../../assets/images/Services/corrosion.jpg";
 import HeroImage4 from "../../assets/images/Services/property.jpg";
 import HeroImage5 from "../../assets/images/Services/procurement.jpg";
-import HeroImage6 from "../../assets/images/Services/christmasTree.jpg";
-import HeroImage7 from "../../assets/images/Services/flanks.jpg";
 import HeroImage8 from "../../assets/images/Services/oilAndGas.jpg";
 import HeroImage9 from "../../assets/images/Services/energy.jpg";
 import HeroImage10 from "../../assets/images/Services/consultancy.jpg";
 import HeroImage11 from "../../assets/images/Services/agriculture.jpg";
 import HeroImage12 from "../../assets/images/Services/automobile.jpg";
+import HeroImage13 from "../../assets/images/Services/well2.jpg";
+import Inspection from "../../assets/images/Services/inspection.jpg";
 
 const servicesData = [
   {
@@ -66,7 +66,7 @@ const servicesData = [
     title: "Inspection Services",
     description:
       "Our inspection services ensure that assets and infrastructure comply with safety, quality, and regulatory standards. Through thorough and precise inspections, we provide clients with insights on the condition of their equipment and structures, helping them make informed decisions to maintain safety and functionality across their operations.",
-    image: HeroImage6,
+    image: Inspection,
   },
   {
     title: "Agriculture",
@@ -86,7 +86,7 @@ const servicesData = [
     title: "Other Services",
     description:
       "We offer specialized services that include wellhead maintenance and configuration to support efficient and safe oil and gas extraction processes. Our team provides torquing of connections, pressure testing, and installation of valve assemblies (also known as Christmas trees) for robust well control. Additionally, we provide expertise in running tools for drilling and production operations, pipeline works to support fluid transportation, and fabrication services tailored to client specifications.",
-    image: HeroImage7,
+    image: HeroImage13,
   },
 ];
 
@@ -103,18 +103,21 @@ const CoreServices = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.2 }}
         >
-          <div className="w-full md:w-1/2 h-64 md:h-72 lg:h-80 shadow-2xl overflow-hidden">
+          <div className="w-full md:w-1/2 h-64 md:h-72 lg:h-96 shadow-2xl overflow-hidden">
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-full object-cover "
+              className="w-full h-full object-cover  aspect-[16/9] transition-transform duration-300 ease-in-out transform hover:scale-105"
+              loading="lazy"
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center">
             <h3 className="text-xl lg:text-2xl font-bold mb-2 text-mavlin-blue">
               {service.title}
             </h3>
-            <p className="text-left font-karla">{service.description}</p>
+            <p className="text-left text-base lg:text-xl font-karla">
+              {service.description}
+            </p>
           </div>
         </motion.div>
       ))}
