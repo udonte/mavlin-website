@@ -20,8 +20,8 @@ const AddressDetails = () => {
       {/* address */}
       <div className="flex flex-col md:flex-row items-center gap-4 mt-16">
         <div className="w-[400px] text-mavlin-blue p-8 border-l-4 border-mavlin-gold shadow h-[200px]">
-          <p className="text-[10px] text-gray-900 mb-4">
-            MAVLIN GLOBAL SERVICE LTD, CANADA
+          <p className="text-[10px] text-gray-900 mb-4 uppercase">
+            Mavlin Global Services Limited, CANADA
           </p>
           <p className=" font-montserratAlternates font-bold">
             Nexus Business Centre, <br /> 3149 5th Avenue, <br /> NE Upper Unit
@@ -58,7 +58,6 @@ const AddressDetails = () => {
               <div className="text-mavlin-blue ">
                 <p className="text-[8px]">MAVLIN EMAILS</p>
                 <p className="text-sm font-medium mt-1">info@mavlin.com</p>
-                <p className="text-sm font-medium">mavlin@gmail.com</p>
               </div>
             </div>
           </div>
