@@ -1,4 +1,4 @@
-import Mission from "../../assets/images/About/Mission.jpg";
+import Mission from "../../assets/images/About/dredge.png";
 import Vision from "../../assets/images/About/Vision.jpg";
 
 const MissionAndVision = () => {
