@@ -258,7 +258,7 @@ const SourceProParts = () => {
                 {/* Image Container */}
                 <div className="relative h-48 overflow-hidden">
                   <div
-                    className="absolute inset-0 bg-contain  bg-center transition-transform duration-700 group-hover:scale-110"
+                    className="absolute inset-0 bg-contain bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{
                       backgroundImage: `url(${category.image})`,
                     }}

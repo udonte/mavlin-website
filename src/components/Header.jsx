@@ -22,10 +22,6 @@ const mobileItems = [
   { title: "Mavlin Farms", path: "/mavlin-farms" },
   { title: "Kronodaeka Flooring", path: "/kronodaekaflooring" },
   { title: "SourcePro Automobiles", path: "/sourcepro" },
-  {
-    title: "Ace Center Nigeria Limited",
-    path: "https://www.acecenterdrivingschool.com.ng",
-  },
   { title: "Contact Us", path: "/contact#contact-form" },
 ];
 
@@ -69,7 +65,7 @@ const Header = () => {
           {/* Subsidiaries Dropdown */}
           <div className="relative">
             <button
-              className="font-medium flex items-center gap-1"
+              className="font-medium lg:flex items-center gap-1 hidden "
               onClick={toggleDropdown}
             >
               Business Associates
@@ -175,16 +171,16 @@ const Header = () => {
                   >
                     {item.title}
                   </NavLink>
-                  <a
-                    href="https://www.acecenterdrivingschool.com.ng"
-                    className="block px-4 py-2 font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ace Center Nigeria Limited
-                  </a>
                 </>
               ))}
+              <a
+                href="https://www.acecenterdrivingschool.com.ng"
+                className="block px-4 py-2 font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ace Center Nigeria Limited
+              </a>
             </motion.div>
           )}
         </div>
