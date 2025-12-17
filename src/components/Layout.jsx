@@ -1,5 +1,4 @@
 // src/components/Layout.js
-import React from "react";
 import { useLocation, Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -11,6 +10,8 @@ import SnowlandHeader from "./SnowlandImmigration/SnowlandHeader";
 import SnowlandFooter from "./SnowlandImmigration/SnowlandFooter";
 import HarayaHeader from "./Haraya/HarayaHeader";
 import HarayaFooter from "./Haraya/HarayaFooter";
+import SourceProHeader from "./SourcePro/SourceProHeader";
+import SourceProFooter from "./SourcePro/SourceProFooter";
 
 const Layout = () => {
   const location = useLocation();
@@ -27,6 +28,8 @@ const Layout = () => {
     headerComponent = <SnowlandHeader />;
   } else if (location.pathname.startsWith("/harayarestaurant")) {
     headerComponent = <HarayaHeader />;
+  } else if (location.pathname.startsWith("/sourcepro")) {
+    headerComponent = <SourceProHeader />;
   } else {
     headerComponent = <Header />;
   }
@@ -40,6 +43,8 @@ const Layout = () => {
     footerComponent = <SnowlandFooter />;
   } else if (location.pathname.startsWith("/harayarestaurant")) {
     footerComponent = <HarayaFooter />;
+  } else if (location.pathname.startsWith("/sourcepro")) {
+    footerComponent = <SourceProFooter />;
   } else {
     footerComponent = <Footer />;
   }

@@ -18,9 +18,10 @@ const mobileItems = [
   { title: "About", path: "/about" },
   { title: "Services", path: "/services" },
   { title: "Projects", path: "/projects" },
-  { title: "Snowland Immigration", path: "/snowlandimmigration/#hero" },
-  { title: "Mavlin Farms", path: "/mavlin-farms/#hero" },
-  { title: "Kronodaeka Flooring", path: "/kronodaekaflooring/#hero" },
+  { title: "Snowland Immigration", path: "/snowlandimmigration" },
+  { title: "Mavlin Farms", path: "/mavlin-farms" },
+  { title: "Kronodaeka Flooring", path: "/kronodaekaflooring" },
+  { title: "SourcePro Automobiles", path: "/sourcepro" },
   {
     title: "Ace Center Nigeria Limited",
     path: "https://www.acecenterdrivingschool.com.ng",
@@ -85,28 +86,34 @@ const Header = () => {
                 onMouseLeave={() => setDropdownOpen(false)}
               >
                 <NavLink
-                  to={"/snowlandimmigration/#hero"}
+                  to={"/snowlandimmigration"}
                   className="block px-4 py-2  text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
                 >
                   Snowland Immigration
                 </NavLink>
                 <NavLink
-                  to={"/mavlin-farms/#hero"}
+                  to={"/mavlin-farms"}
                   className="block px-4 py-2 text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
                 >
                   Mavlin Farms
                 </NavLink>
                 <NavLink
-                  to={"/kronodaekaflooring/#hero"}
+                  to={"/kronodaekaflooring"}
                   className="block px-4 py-2 text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
                 >
                   Kronodaeka Flooring
                 </NavLink>
                 <NavLink
-                  to={"/harayarestaurants/#hero"}
+                  to={"/harayarestaurants"}
                   className="block px-4 py-2 text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
                 >
                   Haraya Restaurants
+                </NavLink>
+                <NavLink
+                  to={"/sourcepro"}
+                  className="block px-4 py-2 text-mavlin-blue text-xs font-medium hover:border-x hover:border-mavlin-gold hover:bg-mavlin-blue hover:text-white"
+                >
+                  SourcePro Automobiles
                 </NavLink>
                 <a
                   href="https://www.acecenterdrivingschool.com.ng"

@@ -7,7 +7,6 @@ import { VscClose } from "react-icons/vsc";
 import { MdMenu } from "react-icons/md";
 
 const HarayaHeader = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [MobileNav, setMobileNav] = useState(false);
 
   const menuItems = [
@@ -22,10 +21,6 @@ const HarayaHeader = () => {
     { title: "Our Offerings", path: "/harayarestaurants/#services" },
     { title: "Contact", path: "/harayarestaurants/#contact-form" },
   ];
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
 
   return (
     <motion.nav

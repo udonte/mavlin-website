@@ -1,6 +1,3 @@
-import React from "react";
-import { FaTools } from "react-icons/fa";
-
 const executedProjectsData = [
   {
     title: "Complete BTS Backbone Site Construction (Turnkey), Uganda",
@@ -135,6 +132,10 @@ const executedProjectsData = [
   {
     title: "Procurement of VFD (TECO Westinghouse)",
     client: "Chesroc Nigeria Limited",
+  },
+  {
+    title: "Procurement of John Deere Tractor 7230R and SFM mulcher",
+    client: "Akadang Farms",
   },
 ];
 

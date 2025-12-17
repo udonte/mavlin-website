@@ -10,6 +10,7 @@ export default {
         "mavlin-farms-orange": "#f79828",
         "mavlin-krono-brown": "#5f281e",
         "mavlin-haraya-blue": "#0c1f3c",
+        "mavlin-sourcepro-blue": "#466faa",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
@@ -18,6 +19,7 @@ export default {
         manrope: ["Manrope", "sans-serif"],
         karla: ["Karla", "sans-serif"],
         arimo: ["Arimo", "sans-serif"],
+        grotesk: ["Space Grotesk", "sans-serif"],
       },
     },
   },

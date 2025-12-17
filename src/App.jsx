@@ -12,10 +12,13 @@ import MavlinFlooring from "./pages/MavlinFlooring";
 import Layout from "./components/Layout";
 import Snowlandimmigration from "./pages/SnowlandImmigration";
 import HarayaRestaurants from "./pages/HarayaRestaurants";
+import ScrollToTop from "./components/ScrollToTop";
+import SourcePro from "./pages/SourcePro";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AnimatePresence mode="wait">
         <Routes>
           <Route element={<Layout />}>
@@ -31,6 +34,7 @@ function App() {
               path="/snowlandimmigration"
               element={<Snowlandimmigration />}
             />
+            <Route path="/sourcepro" element={<SourcePro />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -1,6 +1,6 @@
 import Mavlinlogo from "../assets/images/MavlinBlue.jpeg";
 import footerBackground from "../assets/images/Footer/bg.png"; // Add your background image here
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -9,9 +9,10 @@ const Footer = () => {
     { title: "About", path: "/about" },
     { title: "Services", path: "/services" },
     { title: "Projects", path: "/projects" },
-    { title: "Snowland Immigration", path: "/snowlandimmigration/#hero" },
-    { title: "Mavlin Farms", path: "/mavlin-farms/#hero" },
-    { title: "Mavlin - Kronodaeka Flooring", path: "/mavlin-flooring/#hero" },
+    { title: "Snowland Immigration", path: "/snowlandimmigration" },
+    { title: "Mavlin Farms", path: "/mavlin-farms" },
+    { title: "Mavlin - Kronodaeka Flooring", path: "/mavlin-flooring" },
+    { title: "SourcePro Automobiles", path: "/sourcepro" },
   ];
 
   return (
