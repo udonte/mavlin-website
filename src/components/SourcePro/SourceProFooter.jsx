@@ -69,7 +69,7 @@ const SourceProFooter = () => {
             {/* Contact Info */}
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FiPhone className="text-blue-400 mt-1 flex-shrink-0" />
+                <FiPhone className="text-mavlin-sourcepro-blue mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Call Us</div>
                   <div className="text-gray-400">
@@ -79,7 +79,7 @@ const SourceProFooter = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <FiMail className="text-blue-400 mt-1 flex-shrink-0" />
+                <FiMail className="text-mavlin-sourcepro-blue mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Email</div>
                   <div className="text-gray-400">info@mavlin.com</div>
@@ -87,7 +87,7 @@ const SourceProFooter = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <FiClock className="text-blue-400 mt-1 flex-shrink-0" />
+                <FiClock className="text-mavlin-sourcepro-blue mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Business Hours</div>
                   <div className="text-gray-400">
@@ -169,7 +169,7 @@ const SourceProFooter = () => {
             <div className="flex items-center lg:justify-end w-full">
               <Link
                 to={"/"}
-                className="bg-blue-700 hover:bg-blue-600 text-white font-montserrat px-4 py-2 flex items-center gap-2 mt-4 rounded-2xl w-fit font-bold"
+                className="bg-mavlin-sourcepro-blue hover:bg-blue-600 text-white font-montserrat px-4 py-2 flex items-center gap-2 mt-4 rounded-2xl w-fit font-bold"
               >
                 <p>Mavlin Website</p>
                 <FaArrowRight />

@@ -8,7 +8,6 @@ import HeroImage2 from "../../assets/images/SourcePro/hero/Hero2.jpg";
 import HeroImage3 from "../../assets/images/SourcePro/hero/Hero3.jpg";
 import HeroImage4 from "../../assets/images/SourcePro/hero/Hero4.jpg";
 
-// Mock data for slides - use high-quality luxury car images
 const slides = [
   {
     image: HeroImage1,
@@ -113,7 +112,7 @@ const SourceProHero = () => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.9 }}
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full z-0"
           style={{
             backgroundImage: `linear-gradient(to right, rgba(10, 15, 30, 0.85) 0%, rgba(10, 15, 30, 0.4) 50%, rgba(10, 15, 30, 0.2) 100%), url(${slides[currentIndex].image})`,
             backgroundSize: "cover",
@@ -124,10 +123,10 @@ const SourceProHero = () => {
       </AnimatePresence>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-transparent z-10" />
 
       {/* Main Content */}
-      <div className="h-full flex items-center ">
+      <div className="h-full flex items-center relative z-20">
         <div className="container mx-auto px-4 lg:px-16 xl:px-24 py-8">
           <div className="">
             {/* Badge */}
@@ -177,16 +176,19 @@ const SourceProHero = () => {
               transition={{ delay: 0.7, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 mb-16"
             >
-              <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-blue-600/30">
-                <span className="relative z-10 flex items-center justify-center gap-2">
+              <button className="group px-8 py-4 bg-gradient-to-r from-mavlin-sourcepro-blue to-mavlin-sourcepro-blue/60 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-blue-600/30">
+                <a
+                  href="#contact"
+                  className="relative z-10 flex items-center justify-center gap-2"
+                >
                   {slides[currentIndex].cta}
                   <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-                </span>
+                </a>
                 <div className=" inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
 
               <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:border-white/40">
-                How It Works →
+                <a href="#process">How It Works →</a>
               </button>
             </motion.div>
 
