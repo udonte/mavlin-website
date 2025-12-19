@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { VscClose } from "react-icons/vsc";
 import { MdMenu } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import SourceProLogo from "../../assets/images/SourcePro/source-pro.png";
 
 const SourceProHeader = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -13,8 +14,8 @@ const SourceProHeader = () => {
   // Updated menu items based on our content structure
   const menuItems = [
     { id: "hero", title: "Home", path: "/sourcepro/#hero" },
-    { id: "process", title: "Our Process", path: "/sourcepro/#process" },
     { id: "services", title: "Parts & Services", path: "/sourcepro/#services" },
+    { id: "process", title: "Our Process", path: "/sourcepro/#process" },
     { id: "why-us", title: "Why SourcePro", path: "/sourcepro/#why-us" },
     { id: "contact", title: "Contact", path: "/sourcepro/#contact" },
   ];
@@ -85,22 +86,8 @@ const SourceProHeader = () => {
         {/* Logo */}
         <HashLink smooth to="/sourcepro/#hero" className="flex items-center">
           <div className="relative">
-            <div className="w-full md:w-40 md:h-10 flex items-center justify-center">
-              <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                SOURCEPRO
-              </span>
-              <span className="text-xs font-light text-gray-500 ml-2 mt-1">
-                AUTOMOBILES
-              </span>
-            </div>
-            {/* Optional badge for brand specialization */}
-            <div className="absolute -bottom-2 right-0 flex gap-1">
-              <span className="text-[8px] font-semibold px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded">
-                MERCEDES
-              </span>
-              <span className="text-[8px] font-semibold px-1.5 py-0.5 bg-gray-50 text-gray-700 rounded">
-                BMW
-              </span>
+            <div className="w-32 md:w-40 md:h-10 flex">
+              <img src={SourceProLogo} alt="sourcepro" />
             </div>
           </div>
         </HashLink>
@@ -113,7 +100,7 @@ const SourceProHeader = () => {
                 smooth
                 className={`text-sm font-medium transition-all duration-300 relative group px-1 ${
                   isActive(item.id)
-                    ? "text-blue-600 font-semibold"
+                    ? "text-mavlin-sourcepro-blue font-semibold"
                     : "text-gray-700 hover:text-gray-900"
                 }`}
                 to={item.path}
@@ -122,7 +109,7 @@ const SourceProHeader = () => {
                 {item.title}
                 {/* Active indicator bar */}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-400 transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-mavlin-sourcepro-blue to-blue-400 transition-all duration-300 ${
                     isActive(item.id) ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 ></span>
@@ -149,7 +136,7 @@ const SourceProHeader = () => {
               className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group ${
                 isActive("contact")
                   ? "bg-gradient-to-r from-blue-800 to-blue-700 text-white"
-                  : "bg-gradient-to-r from-blue-600 to-blue-500 text-white"
+                  : "bg-gradient-to-r from-mavlin-sourcepro-blue to-blue-500 text-white"
               }`}
               onClick={() => setActiveSection("contact")}
             >
@@ -196,7 +183,7 @@ const SourceProHeader = () => {
                       to={item.path}
                       className={`flex items-center justify-between py-3 px-4 rounded-lg transition-all duration-200 group ${
                         isActive(item.id)
-                          ? "bg-blue-50 text-blue-600 border-l-4 border-blue-600"
+                          ? "bg-blue-50 text-mavlin-sourcepro-blue border-l-4 border-mavlin-sourcepro-blue"
                           : "text-gray-700 hover:bg-blue-50 hover:text-blue-700"
                       }`}
                       onClick={() => handleMobileNavClick(item.id)}
@@ -204,7 +191,7 @@ const SourceProHeader = () => {
                       <div className="flex items-center gap-3">
                         {isActive(item.id) && (
                           <motion.div
-                            className="w-2 h-2 bg-blue-600 rounded-full"
+                            className="w-2 h-2 bg-mavlin-sourcepro-blue rounded-full"
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                           />
@@ -220,8 +207,8 @@ const SourceProHeader = () => {
                       <div
                         className={`w-1.5 h-1.5 rounded-full ${
                           isActive(item.id)
-                            ? "bg-blue-600 opacity-100"
-                            : "bg-blue-600 opacity-0 group-hover:opacity-100"
+                            ? "bg-mavlin-sourcepro-blue opacity-100"
+                            : "bg-mavlin-sourcepro-blue opacity-0 group-hover:opacity-100"
                         } transition-opacity`}
                       ></div>
                     </HashLink>
@@ -238,7 +225,7 @@ const SourceProHeader = () => {
                   <HashLink
                     smooth
                     to="/sourcepro/#contact"
-                    className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-blue-700 to-blue-600 text-white py-3.5 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-blue-700 to-mavlin-sourcepro-blue text-white py-3.5 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                     onClick={() => handleMobileNavClick("contact")}
                   >
                     <FiPhoneCall className="text-white" />

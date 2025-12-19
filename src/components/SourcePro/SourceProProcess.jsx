@@ -4,7 +4,6 @@ import {
   FiGlobe,
   FiCheckCircle,
   FiTruck,
-  FiShield,
 } from "react-icons/fi";
 import { MdPrecisionManufacturing } from "react-icons/md";
 
@@ -265,39 +264,6 @@ const SourceProProcess = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Assurance Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-20 lg:mt-32"
-        >
-          <div className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-2xl border border-white/10 p-8 lg:p-12">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-              <div className="text-center lg:text-left">
-                <div className="flex items-center gap-3 justify-center lg:justify-start mb-4">
-                  <FiShield className="text-3xl text-blue-400" />
-                  <h3 className="text-2xl font-bold text-white">
-                    Our Guarantee
-                  </h3>
-                </div>
-                <p className="text-gray-300 max-w-2xl">
-                  Every component undergoes 12-point verification. If it is not
-                  100% authentic and compatible, we will source the correct part
-                  at no additional cost to you.
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-600/30 transition-all duration-300">
-                  Start Your Order
-                </button>
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

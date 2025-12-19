@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import {
   FiPhoneCall,
   FiMail,
-  FiMapPin,
   FiClock,
   FiUpload,
   FiMessageSquare,
@@ -20,15 +19,15 @@ const SourceProContact = () => {
     {
       icon: <FiPhoneCall className="text-2xl" />,
       title: "Call Us",
-      detail: "+234 812 345 6789",
+      detail: "+1587 732 0245",
       subDetail: "Available 8AM - 6PM, Mon-Sat",
       color: "from-blue-600/20 to-blue-900/20",
-      action: "tel:+2348123456789",
+      action: "tel:+15877320245",
     },
     {
       icon: <FaWhatsapp className="text-2xl" />,
       title: "WhatsApp",
-      detail: "+234 812 345 6789",
+      detail: "+2349 167 360 9959",
       subDetail: "Fast response, send images",
       color: "from-green-600/20 to-green-900/20",
       action: "https://wa.me/2348123456789",
@@ -36,18 +35,10 @@ const SourceProContact = () => {
     {
       icon: <FiMail className="text-2xl" />,
       title: "Email",
-      detail: "orders@sourceproauto.com",
+      detail: "info@mavlin.com",
       subDetail: "24-hour response time",
       color: "from-red-600/20 to-red-900/20",
-      action: "mailto:orders@sourceproauto.com",
-    },
-    {
-      icon: <FiMapPin className="text-2xl" />,
-      title: "Visit Us",
-      detail: "Victoria Island, Lagos",
-      subDetail: "By appointment only",
-      color: "from-purple-600/20 to-purple-900/20",
-      action: "#",
+      action: "mailto:info@mavlin.com",
     },
   ];
 
@@ -107,7 +98,7 @@ const SourceProContact = () => {
             className="space-y-8"
           >
             {/* Contact Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {contactInfo.map((info, index) => (
                 <motion.a
                   key={index}
@@ -200,19 +191,14 @@ const SourceProContact = () => {
                   <div className="flex items-center gap-3 mb-4">
                     <FiUpload className="text-white text-xl" />
                     <h3 className="text-xl font-bold text-white">
-                      Have Part Number?
+                      Looking To Get a Spare Part?
                     </h3>
                   </div>
 
                   <p className="text-gray-300 mb-6">
-                    Upload images or part numbers for fastest processing
+                    Upload images or part descriptions to our whatsapp or as an
+                    email.
                   </p>
-
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <button className="px-4 py-2 bg-blue-600/80 backdrop-blur-sm text-white font-medium rounded-lg hover:bg-blue-700 transition-all duration-300">
-                      Send via WhatsApp
-                    </button>
-                  </div>
                 </div>
               </motion.div>
             </div>

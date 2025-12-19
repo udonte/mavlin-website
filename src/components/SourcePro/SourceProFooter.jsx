@@ -1,18 +1,9 @@
 import { motion } from "framer-motion";
-import {
-  FiMapPin,
-  FiPhone,
-  FiMail,
-  FiClock,
-  FiFacebook,
-  FiTwitter,
-  FiInstagram,
-  FiLinkedin,
-  FiYoutube,
-} from "react-icons/fi";
-import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import { FiPhone, FiMail, FiClock } from "react-icons/fi";
+import { FaArrowRight } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import SourceProLogo from "../../assets/images/SourcePro/SourcePro-bg.png";
 
 const SourceProFooter = () => {
   const currentYear = new Date().getFullYear();
@@ -38,15 +29,6 @@ const SourceProFooter = () => {
     },
   ];
 
-  const socialLinks = [
-    { icon: <FiFacebook />, name: "Facebook", href: "#" },
-    { icon: <FiTwitter />, name: "Twitter", href: "#" },
-    { icon: <FiInstagram />, name: "Instagram", href: "#" },
-    { icon: <FiLinkedin />, name: "LinkedIn", href: "#" },
-    { icon: <FiYoutube />, name: "YouTube", href: "#" },
-    { icon: <FaWhatsapp />, name: "WhatsApp", href: "#" },
-  ];
-
   return (
     <footer className="relative bg-gradient-to-b from-gray-950 to-black border-t border-white/10 font-grotesk">
       {/* Top Pattern */}
@@ -64,24 +46,16 @@ const SourceProFooter = () => {
             className="lg:col-span-2"
           >
             <div className="mb-8">
+              {/* Logo */}
               <HashLink
                 smooth
                 to="/sourcepro/#hero"
-                className="inline-block mb-6 font-montserrat"
+                className="flex items-center"
               >
-                <div className="flex items-center gap-3">
-                  <div className="text-2xl font-bold text-white">SOURCEPRO</div>
-                  <div className="text-xs font-light text-gray-500 mt-1">
-                    AUTOMOBILES
+                <div className="relative">
+                  <div className="w-32 md:w-40 md:h-10 flex">
+                    <img src={SourceProLogo} alt="sourcepro" />
                   </div>
-                </div>
-                <div className="flex gap-2 mt-2">
-                  <span className="text-xs font-semibold px-2 py-0.5 bg-blue-50 text-blue-700 rounded">
-                    MERCEDES
-                  </span>
-                  <span className="text-xs font-semibold px-2 py-0.5 bg-gray-50 text-gray-700 rounded">
-                    BMW
-                  </span>
                 </div>
               </HashLink>
 
@@ -95,20 +69,12 @@ const SourceProFooter = () => {
             {/* Contact Info */}
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FiMapPin className="text-blue-400 mt-1 flex-shrink-0" />
-                <div>
-                  <div className="text-white font-medium">Office Address</div>
-                  <div className="text-gray-400">
-                    Victoria Island, Lagos, Nigeria
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
                 <FiPhone className="text-blue-400 mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Call Us</div>
-                  <div className="text-gray-400">+234 812 345 6789</div>
+                  <div className="text-gray-400">
+                    +1587 732 0245, +234 916 736 0995
+                  </div>
                 </div>
               </div>
 
@@ -116,7 +82,7 @@ const SourceProFooter = () => {
                 <FiMail className="text-blue-400 mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Email</div>
-                  <div className="text-gray-400">orders@sourceproauto.com</div>
+                  <div className="text-gray-400">info@mavlin.com</div>
                 </div>
               </div>
 
@@ -195,22 +161,6 @@ const SourceProFooter = () => {
             transition={{ duration: 0.5 }}
             className="text-center lg:text-right"
           >
-            {/* Social Links */}
-            <div className="flex justify-center lg:justify-end gap-4 mb-6">
-              {socialLinks.map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.href}
-                  whileHover={{ y: -3 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:border-blue-400/30 transition-all duration-300"
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </motion.a>
-              ))}
-            </div>
-
             {/* Copyright */}
             <div className="text-gray-500 text-sm">
               <p>© {currentYear} SourcePro Automobiles. All rights reserved.</p>

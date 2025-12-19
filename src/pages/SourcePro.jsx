@@ -27,8 +27,8 @@ const SourcePro = () => {
           transition={{ duration: 5 }}
           exit={{ opacity: 0 }}
         >
-          <SourceProProcess />
           <SourceProParts />
+          <SourceProProcess />
           <SourceProWhy />
           <SourceProContact />
           <SourceProFAQ />

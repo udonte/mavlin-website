@@ -135,9 +135,9 @@ const SourceProHero = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 mb-8"
+              className="inline-flex items-center gap-2 mb-8 animate-pulse duration-300 transition-all"
             >
-              <span className="px-4 py-1.5 bg-blue-600/20 backdrop-blur-sm rounded-full text-blue-400 text-xs md:text-sm font-medium border border-blue-500/30">
+              <span className="px-4 py-1.5 bg-blue-600/20 backdrop-blur-sm rounded-full text-mavlin-sourcepro-blue text-xs md:text-sm font-medium border border-blue-500/30">
                 EXCLUSIVE TO MERCEDES & BMW
               </span>
               <span className="text-gray-400 text-xs md:text-sm">
@@ -155,7 +155,7 @@ const SourceProHero = () => {
               <span className="block text-4xl lg:text-6xl xl:text-7xl font-montserrat">
                 {slides[currentIndex].title}
               </span>
-              <span className="block text-blue-400 mt-2 text-xl md:text-3xl">
+              <span className="block text-mavlin-sourcepro-blue mt-2 text-xl md:text-3xl">
                 {slides[currentIndex].subtitle}
               </span>
             </motion.h1>
@@ -229,7 +229,7 @@ const SourceProHero = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "w-8 bg-blue-500"
+                    ? "w-8 bg-mavlin-sourcepro-blue"
                     : "bg-white/50 hover:bg-white"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}

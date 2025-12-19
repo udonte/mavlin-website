@@ -461,9 +461,12 @@ const SourceProParts = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-600/30 transition-all duration-300">
+                <a
+                  href="#contact"
+                  className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-600/30 transition-all duration-300"
+                >
                   Reachout to Us
-                </button>
+                </a>
               </div>
             </div>
           </div>

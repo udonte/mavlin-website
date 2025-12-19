@@ -8,16 +8,9 @@ import {
   FiShield,
   FiClock,
 } from "react-icons/fi";
-import { FaTools, FaUserTie } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 
-// Import team and partnership images
-import TeamExpert1 from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
-import TeamExpert2 from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
-import TeamExpert3 from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
-import Certification from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
 import Workshop from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
-import Partnership from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
-
 import MercedesLogo from "../../assets/images/SourcePro/why/Mercedes-Benz-Logo.png";
 import BMWLogo from "../../assets/images/SourcePro/why/bmw-logo.png";
 
@@ -52,33 +45,6 @@ const valueProps = [
   },
 ];
 
-const teamMembers = [
-  {
-    name: "Ekaete Sunmonu",
-    role: "Technical Director & Mercedes Specialist",
-    experience: "15+ years",
-    specialty: "Engine & Electronics",
-    image: TeamExpert1,
-    certifications: ["Mercedes Master Tech", "Bosch Certified"],
-  },
-  {
-    name: "Babatunde Okikiolu",
-    role: "BMW Systems Expert",
-    experience: "12+ years",
-    specialty: "Suspension & Transmission",
-    image: TeamExpert2,
-    certifications: ["BMW Master Technician", "ZF Certified"],
-  },
-  {
-    name: "Chukwuebuka Okoro",
-    role: "Logistics & Quality Assurance",
-    experience: "10+ years",
-    specialty: "Supply Chain Management",
-    image: TeamExpert3,
-    certifications: ["ISO Certified", "Customs Specialist"],
-  },
-];
-
 const testimonials = [
   {
     quote:
@@ -86,15 +52,13 @@ const testimonials = [
     author: "Michael Adebayo",
     vehicle: "Mercedes-Benz S550",
     rating: 5,
-    image: Workshop,
   },
   {
     quote:
       "As a BMW specialist workshop, we rely on SourcePro for genuine parts. Their verification process eliminates compatibility issues that plague our industry.",
     author: "Premium Auto Works",
     role: "Authorized BMW Service Center",
-    rating: 5,
-    image: Certification,
+    rating: 4,
   },
   {
     quote:
@@ -102,7 +66,6 @@ const testimonials = [
     author: "Chioma Nwosu",
     vehicle: "BMW X5 M",
     rating: 5,
-    image: Partnership,
   },
 ];
 
@@ -215,88 +178,6 @@ const SourceProWhy = () => {
           ))}
         </motion.div>
 
-        {/* Team Expertise Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <div className="flex items-center gap-3 mb-10">
-            <FaUserTie className="text-blue-400 text-2xl" />
-            <h3 className="text-3xl font-bold text-white">Meet Our Experts</h3>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                className="group cursor-pointer"
-              >
-                <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 group-hover:border-blue-500/30 group-hover:shadow-2xl">
-                  {/* Image Container */}
-                  <div className="relative h-64 overflow-hidden">
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                      style={{ backgroundImage: `url(${member.image})` }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-
-                    {/* Experience Badge */}
-                    <div className="absolute top-4 right-4">
-                      <div className="px-3 py-1.5 bg-blue-600/90 backdrop-blur-sm rounded-full text-white text-sm font-semibold">
-                        {member.experience}
-                      </div>
-                    </div>
-
-                    {/* Name Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h4 className="text-2xl font-bold text-white mb-1">
-                        {member.name}
-                      </h4>
-                      <p className="text-blue-300 font-medium">{member.role}</p>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6">
-                    <div className="mb-4">
-                      <div className="text-white/70 text-sm mb-2">
-                        Specialty:
-                      </div>
-                      <div className="text-white font-semibold">
-                        {member.specialty}
-                      </div>
-                    </div>
-
-                    <div>
-                      <div className="text-white/70 text-sm mb-2">
-                        Certifications:
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {member.certifications.map((cert, idx) => (
-                          <span
-                            key={idx}
-                            className="px-3 py-1 bg-white/5 rounded-full text-sm text-gray-300 border border-white/10"
-                          >
-                            {cert}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Testimonials Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -323,15 +204,6 @@ const SourceProWhy = () => {
                 className="group"
               >
                 <div className="h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 group-hover:border-blue-500/30">
-                  {/* Testimonial Image */}
-                  <div className="relative h-48 overflow-hidden">
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                      style={{ backgroundImage: `url(${testimonial.image})` }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  </div>
-
                   {/* Content */}
                   <div className="p-6">
                     {/* Rating */}
@@ -468,15 +340,15 @@ const SourceProWhy = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-600/30 transition-all duration-300">
-                  Start Your Order Now
-                </button>
-                <button className="px-8 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
+                <a
+                  href="#contact"
+                  className="px-8 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
+                >
                   <span className="flex items-center gap-2">
                     <FaTools />
-                    Expert Consultation
+                    Car Part Consultation
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
