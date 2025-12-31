@@ -1,14 +1,11 @@
-import React from "react";
 import { motion } from "framer-motion";
 import HeroImage1 from "../../assets/images/Services/construction.jpg";
 import HeroImage2 from "../../assets/images/Services/telecomms.jpg";
 import HeroImage3 from "../../assets/images/Services/corrosion.jpg";
-import HeroImage4 from "../../assets/images/Services/property.jpg";
 import HeroImage5 from "../../assets/images/Services/procurement.jpg";
 import HeroImage8 from "../../assets/images/Services/oilAndGas.jpg";
 import HeroImage9 from "../../assets/images/Services/energy.jpg";
 import HeroImage10 from "../../assets/images/Services/consultancy.jpg";
-import HeroImage11 from "../../assets/images/Services/agriculture.jpg";
 import HeroImage12 from "../../assets/images/Services/automobile.jpg";
 import HeroImage13 from "../../assets/images/Services/well2.jpg";
 import Inspection from "../../assets/images/Services/inspection.jpg";
@@ -50,12 +47,7 @@ const servicesData = [
       "Our corrosion management services are designed to protect the longevity and integrity of industrial structures and equipment. We conduct thorough corrosion assessments and apply protective coatings to shield surfaces from environmental wear. Our team installs and maintains cathodic protection systems tailored to pipelines, tanks, and marine assets, and offers corrosion monitoring through advanced sensors and remote tracking technologies. We support clients in selecting corrosion-resistant materials and can supply and apply chemical inhibitors for industrial processes. With regular inspection, repair, and maintenance services, our corrosion management solutions help clients extend the service life of critical assets.",
     image: HeroImage3,
   },
-  {
-    title: "Property Management",
-    description:
-      "In property management, we provide comprehensive support to maximize the value and operational efficiency of real estate assets. We assist in property acquisition, leasing, and tenant management, creating positive tenant relationships while ensuring properties are managed effectively. Our facility maintenance and operations services keep properties in top condition through regular inspections, repairs, and groundskeeping. We also optimize asset value with strategic upgrades and enhancements, backed by financial management and transparent reporting for streamlined finances. Additionally, we coordinate with trusted vendors and contractors, ensure compliance with safety standards, and manage all procurement and logistics needs to support ongoing property upkeep.",
-    image: HeroImage4,
-  },
+
   {
     title: "Procurement – Equipment and Materials",
     description:
@@ -67,12 +59,6 @@ const servicesData = [
     description:
       "Our inspection services ensure that assets and infrastructure comply with safety, quality, and regulatory standards. Through thorough and precise inspections, we provide clients with insights on the condition of their equipment and structures, helping them make informed decisions to maintain safety and functionality across their operations.",
     image: Inspection,
-  },
-  {
-    title: "Agriculture",
-    description:
-      "Our agricultural services focus on enhancing productivity and sustainability within the farming industry. We offer consultancy for crop management, soil improvement, and supply chain optimization, helping farmers and agribusinesses achieve efficient resource use and increase yield. Our services also include modern agricultural techniques and equipment to promote sustainable farming practices.",
-    image: HeroImage11,
   },
 
   {

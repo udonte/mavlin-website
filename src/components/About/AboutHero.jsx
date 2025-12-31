@@ -62,8 +62,8 @@ const AboutHero = () => {
         </h1>
         <p className="text-sm md:text-base mb-6 text-left slide-in delay-150">
           Our dynamic teams in Nigeria and Canada specialize in delivering
-          reliable and innovative services across Telecommunications, Energy,
-          Agriculture, and more.
+          reliable and innovative services across Telecommunications, Energy, ,
+          and more.
         </p>
         <button className="bg-transparent py-2 px-6 hover:bg-black/30 text-lg font-semibold border border-white slide-in delay-300">
           Discover more

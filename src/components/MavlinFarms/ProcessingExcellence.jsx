@@ -9,11 +9,7 @@ const ProcessingExcellence = () => {
       className="px-8 py-8 lg:py-24 lg:px-24 flex flex-col-reverse md:flex-row items-start justify-between gap-8"
     >
       <div className="h-[500px] w-full md:w-1/2 shadow-2xl">
-        <img
-          src={About}
-          alt="agriculture"
-          className="h-full w-full object-cover"
-        />
+        <img src={About} alt="" className="h-full w-full object-cover" />
       </div>
       <div className=" w-full md:w-1/2 flex flex-col items-start justify-between h-[500px]">
         <p className="text-4xl font-bold text-mavlin-farms-green font-montserratAlternates uppercase">

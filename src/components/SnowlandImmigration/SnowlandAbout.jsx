@@ -11,7 +11,7 @@ const SnowlandAbout = () => {
       <div className="h-[400px] w-full md:w-1/2 overflow-hidden">
         <img
           src={About}
-          alt="agriculture"
+          alt=""
           className="h-full w-full object-cover md:object-contain"
         />
       </div>

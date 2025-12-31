@@ -7,11 +7,7 @@ const KronoAbout = () => {
     <section id="about" className="px-8 py-8 lg:py-24 lg:px-24 ">
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         <div className="h-[500px] w-full md:w-1/2 shadow-xl border border-mavlin-krono-brown/50">
-          <img
-            src={About}
-            alt="agriculture"
-            className="h-full w-full object-cover"
-          />
+          <img src={About} alt="" className="h-full w-full object-cover" />
         </div>
         <div className=" w-full md:w-1/2 flex flex-col items-start gap-4 justify-between">
           <p className="text-4xl font-bold text-mavlin-krono-brown font-Karla uppercase">

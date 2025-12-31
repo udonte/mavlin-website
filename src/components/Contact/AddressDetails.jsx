@@ -57,7 +57,7 @@ const AddressDetails = () => {
               </div>
               <div className="text-mavlin-blue ">
                 <p className="text-[8px]">MAVLIN EMAILS</p>
-                <p className="text-sm font-medium mt-1">info@mavlin.com</p>
+                <p className="text-sm font-medium mt-1">info@sourcepro.com</p>
               </div>
             </div>
           </div>

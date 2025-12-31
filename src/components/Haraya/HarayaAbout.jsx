@@ -54,11 +54,7 @@ const HarayaAbout = () => {
         </button>
       </div>
       <div className="h-[500px] w-full mt-8 md:mt-0  md:w-1/2 shadow-2xl">
-        <img
-          src={About}
-          alt="agriculture"
-          className="h-full w-full object-cover"
-        />
+        <img src={About} alt="" className="h-full w-full object-cover" />
       </div>
     </section>
   );

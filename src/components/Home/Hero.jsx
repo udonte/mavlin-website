@@ -64,9 +64,9 @@ const Hero = () => {
         <p className="text-sm md:text-base mb-6 text-left slide-in delay-150">
           Mavlin stands at the forefront of innovation, dedicated to creating
           impactful, sustainable solutions across industries. From
-          Telecommunications and Energy to Agriculture and Technology, our
-          mission is to bridge continents and uplift communities, one visionary
-          project at a time.
+          Telecommunications and Energy to and Technology, our mission is to
+          bridge continents and uplift communities, one visionary project at a
+          time.
         </p>
         <button className="bg-transparent py-2 px-6 hover:bg-black/30 text-lg font-semibold border border-white slide-in delay-300">
           <Link to={"/services"}>Discover more</Link>

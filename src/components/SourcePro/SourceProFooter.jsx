@@ -82,7 +82,7 @@ const SourceProFooter = () => {
                 <FiMail className="text-mavlin-sourcepro-blue mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Email</div>
-                  <div className="text-gray-400">info@mavlin.com</div>
+                  <div className="text-gray-400">info@sourcepro.com</div>
                 </div>
               </div>
 

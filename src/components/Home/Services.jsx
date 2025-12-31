@@ -1,9 +1,3 @@
-import Service1 from "../../assets/images/Home/Services1.png";
-import Service2 from "../../assets/images/Home/Services2.png";
-import Service3 from "../../assets/images/Home/Services3.png";
-import Service4 from "../../assets/images/Home/Services4.png";
-import Service5 from "../../assets/images/Home/Services5.png";
-import agriculture from "../../assets/images/Home/agriculture.png";
 import construction from "../../assets/images/Home/construction.png";
 import telecoms from "../../assets/images/Home/telecoms2.png";
 import oilGas from "../../assets/images/Home/oilGas2.png";
@@ -30,12 +24,6 @@ const serviceData = [
   },
 
   {
-    image: agriculture,
-    title: "Agriculture",
-    description:
-      "Modern farming techniques for high-quality exports to North America",
-  },
-  {
     image: procurement,
     title: "Procurement & Logistics",
     description:
@@ -53,7 +41,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
         {serviceData.map((service, index) => (
           <div
             key={index}

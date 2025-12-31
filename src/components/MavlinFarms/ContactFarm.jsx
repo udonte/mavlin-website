@@ -240,7 +240,7 @@ const ContactFarm = () => {
                 </div>
                 <div className="text-mavlin-farms-green ">
                   <p className="text-[8px]">MAVLIN EMAILS</p>
-                  <p className="text-sm font-medium mt-1">info@mavlin.com</p>
+                  <p className="text-sm font-medium mt-1">info@sourcepro.com</p>
                   <p className="text-sm font-medium">mavlin@gmail.com</p>
                 </div>
               </div>
