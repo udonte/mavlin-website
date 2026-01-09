@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Hero from "../components/Home/Hero";
-import Testimonials from "../components/Home/Testimonial";
 import AboutUs from "../components/Home/AboutUs";
 import Overview from "../components/Home/Overview";
 import Services from "../components/Home/Services";

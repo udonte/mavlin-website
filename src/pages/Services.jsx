@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import Hero from "../components/Home/Hero";
-import Testimonials from "../components/Home/Testimonial";
-import AboutUs from "../components/Home/AboutUs";
-import Overview from "../components/Home/Overview";
-import WhyChoose from "../components/Home/WhyChoose";
 import StatsSection from "../components/Home/Stats";
-import OurMission from "../components/Home/OurMission";
 import Clients from "../components/Home/Clients";
 import CoreServices from "../components/Services/CoreServices";
 import ServicesHero from "../components/Services/ServicesHero";
