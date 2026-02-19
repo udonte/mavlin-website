@@ -1,5 +1,4 @@
-import React from "react";
-import { FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 const AddressDetails = () => {
@@ -34,9 +33,9 @@ const AddressDetails = () => {
             MAVLIN PROJECTS LIMITED, NIGERIA
           </p>
           <p className=" font-montserratAlternates font-bold ">
-            103 Rumuewhara new road layout, <br /> valley view estate, Atali,{" "}
-            <br />
-            Portharcourt. Nigeria
+            19A Kpalukwu Street, <br /> (Off Khana Street), <br /> Oroworukwo
+            Village, <br />
+            Portharcourt, Nigeria
           </p>
         </div>
         <div className="p-4 flex items-center justify-center">
@@ -48,7 +47,7 @@ const AddressDetails = () => {
               <div className="text-mavlin-blue ">
                 <p className="text-[8px]">COMPANY PHONES</p>
                 <p className="text-sm font-medium mt-1">+1587 732 0245</p>
-                <p className="text-sm font-medium">+2349167360995</p>
+                <p className="text-sm font-medium">+234 803 606 9977</p>
               </div>
             </div>
             <div className="flex items-start gap-2 rounded">
